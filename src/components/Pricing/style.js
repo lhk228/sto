@@ -3,7 +3,9 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient( #E0ECFB, #F4F9FC);
   `;
 
 const Main = styled.div`

@@ -3,7 +3,8 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
+  background: linear-gradient( #E0ECFB, #F4F9FC);
   `;
 
 const Main = styled.div`
@@ -61,5 +62,4 @@ const InputBox = styled.div`
   border-radius: 9px;
 `;
 
-export {Container, Main, Title, Text, VideoBox, InputBox, Box, 
-        Tit};
+export {Container, Main, Title, Text, VideoBox, InputBox, Box, Tit};

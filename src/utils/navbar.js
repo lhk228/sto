@@ -1,5 +1,5 @@
 import useId from "../hooks/useId";
-import FreeTrialStep1Page from "../pages/Step1";
+import FreeTrialStep1Page from "../pages/FreeTrial_Step1";
 import PricingPage from "../pages/Pricing"
 
 export const navbar = [
