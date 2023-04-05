@@ -1,13 +1,67 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--color-6Z-dzM8-1);
+}
+
+/* Root configurations */
+:root {
+  --cf-font-size-headline-xl: 3.125rem;
+  --cf-font-size-headline-l: 2.375rem;
+  --cf-font-size-headline-m: 1.75rem;
+  --cf-font-size-headline-s: 1.3125rem;
+  --cf-font-size-subheadline-xl: 1.125rem;
+  --cf-font-size-subheadline-l: 1rem;
+  --cf-font-size-subheadline-m: 0.875rem;
+  --cf-font-size-subheadline-s: 0.75rem;
+  --cf-font-size-content-xl: 1.25rem;
+  --cf-font-size-content-l: 1.125rem;
+  --cf-font-size-content-m: 1rem;
+  --cf-font-size-content-s: 0.75rem;
+  --cf-font-size-mobile-headline-xl: 1.95rem;
+  --cf-font-size-mobile-headline-l: 1.5rem;
+  --cf-font-size-mobile-headline-m: 1.25rem;
+  --cf-font-size-mobile-headline-s: 1rem;
+  --cf-font-size-mobile-subheadline-xl: 1.25rem;
+  --cf-font-size-mobile-subheadline-l: 1rem;
+  --cf-font-size-mobile-subheadline-m: 0.8rem;
+  --cf-font-size-mobile-subheadline-s: 0.64rem;
+  --cf-font-size-mobile-content-xl: 1.56rem;
+  --cf-font-size-mobile-content-l: 1.25rem;
+  --cf-font-size-mobile-content-m: 1rem;
+  --cf-font-size-mobile-content-s: 0.8rem;
+
+/* ROOT COLORS */
+  --color-6Z-dzM8-1: rgb(29, 46, 59);
+  --color-6Z-dzM8-2: rgb(47, 47, 47);
+  --color-6Z-dzM8-3: rgb(245, 249, 252);
+  --color-6Z-dzM8-4: rgb(96, 96, 107);
+  --color-6Z-dzM8-5: rgb(255, 255, 255);
+  --color-6Z-dzM8-6: rgb(245, 249, 252);
+  --color-6Z-dzM8-7: rgb(28, 188, 255);
+  --color-6Z-dzM8-8: rgb(228, 78, 56);
+  /* PADDING */
+  --padding: 0 130px;  
+}
+
+
+.reactPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.checkbox {
+  color: white;
+  font-size: 16px;
+  margin: 8px;
+  font-weight: 600;
 }
