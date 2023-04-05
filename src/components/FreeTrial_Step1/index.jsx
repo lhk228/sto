@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Main, Title, Tit, Text, VideoBox,  InputTitle, Wrapper,  Section, Iconbox, Img, Box} from './style';
+import { Container, Main, Title, Tit, Text, VideoBox,  InputTitle, Section, Iconbox, Img, Box} from './style';
 import {Button} from '../Generic';
 import ReactPlayer from 'react-player';
 import sns1 from '../../assets/icons/sns1.png'
