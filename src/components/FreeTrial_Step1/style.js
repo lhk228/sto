@@ -11,17 +11,11 @@ const Main = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  max-width: 414px;
+  max-width: 390px;
   width: 100%;
   padding: 20px 0;
   `;
-const Section = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-`;
+
 const Tit = styled.h1`
   font-size: 40px;
   font-weight: 800;
@@ -47,7 +41,7 @@ const Box = styled.div`
   padding: 10px;
   gap: 10px;
   border-radius: 8px;
-  margin-bottom: 15px
+  margin-bottom: 15px;
 `;
 
 const VideoBox = styled.div`
@@ -66,28 +60,6 @@ const InputBox = styled.div`
   margin: 20px 0;
   border-radius: 9px;
 `;
-const InputTitle = styled.p`
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  color: #FFFFFF;
-  color: ${({color})=>(color ? `${color}` : '#FFF')};
-`;
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-  width: 100%;
-`;
-
-const Iconbox = styled.div`
-  display: flex;
-`;
-const Img = styled.img`
-cursor: pointer;
-`;
-
 
 export {Container, Main, Title, Text, VideoBox, InputBox, Box, 
-        Section, InputTitle, Wrapper,  Img, Iconbox, Tit};
+        Tit};

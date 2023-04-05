@@ -1,6 +1,5 @@
 import useId from "../hooks/useId";
-import FreeTrialStep1Page from "../pages/FreeTrial_Step1";
-import FreeTrialStep2Page from "../pages/FreeTrial_Step2";
+import FreeTrialStep1Page from "../pages/Step1";
 import PricingPage from "../pages/Pricing"
 
 export const navbar = [
@@ -8,7 +7,7 @@ export const navbar = [
     id: useId, 
     element: <PricingPage/>, 
     title: 'Pricing', 
-    path:'/pricing', 
+    path:'/intro', 
     private: false, 
     hidden: false
   },
@@ -16,15 +15,9 @@ export const navbar = [
   {
     id: useId,
     element: <FreeTrialStep1Page/>,
-    path: '/pro-monthly/step-1',
+    path: '/next-step',
     private: false,
     hidden: true
   },
-  {
-    id: useId,
-    element: <FreeTrialStep2Page/>,
-    path: '/pro-monthly/step-2',
-    private: false,
-    hidden: true
-  },
+
 ];

@@ -11,17 +11,11 @@ const Main = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 170px;
-  max-width: 414px;
+  max-width: 400px;
   width: 100%;
   padding: 20px 0;
   `;
-const Section = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-`;
+
 const Title = styled.h1`
   font-size: 34px;
   font-weight: 700;
@@ -79,4 +73,4 @@ cursor: pointer;
 
 
 export {Container, Main, Title, Text, VideoBox, InputBox, 
-        Section, InputTitle, Wrapper, InputWrap, Img, Iconbox};
+      InputTitle, Wrapper, InputWrap, Img, Iconbox};
