@@ -6,10 +6,12 @@ import client3 from '../../assets/imgs/client-3-3.avif';
 import logo from '../../assets/imgs/trustpilot.avif';
 import { Button } from '../Generic';
 import { Index } from '../1_HomePage_Intro/style';
+import { useNavigate } from 'react-router-dom';
 
 const EntrepreneursHomePage = () => {
+  const navigate = useNavigate();
   const onClick = () => {
-    window.location.href = 'https://merisa-pricing.netlify.app/'
+    navigate('/pricing-home')
   }
   return (
     <Container>

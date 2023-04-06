@@ -2,10 +2,12 @@ import React from 'react'
 import { Container, Main, Suptitle, Title, Text, Index, IconCheck, Wrapper, Section, SectionText } from './style';
 import { Button } from '../Generic';
 import iconCheck from '../../assets/icons/check.svg';
+import { useNavigate } from 'react-router-dom';
 
 const Intro = () => {
+  const navigate = useNavigate()
   const onClick = () => {
-    window.location.href = 'https://merisa-pricing.netlify.app/'
+    navigate('/pricing-home')
   }
   return (
     <Container>

@@ -4,6 +4,9 @@ import MainPage from "../pages/Main"
 import StoryHomePage from "../pages/StoryHome";
 import SuccessHomePage from "../pages/SuccessHome";
 import PricingHomePage from "../pages/PricingHome";
+import FreeTrialStep1Page from "../pages/FreeTrial_Step1";
+import FreeTrialStep2Page from "../pages/FreeTrial_Step2";
+
 
 export const navbar = [
   {
@@ -43,6 +46,21 @@ export const navbar = [
     id: useId,
     element: <PricingHomePage/>,
     path: '/pricing-home',
+    private: false,
+    hidden: true
+  },
+
+  {
+    id: useId,
+    element: <FreeTrialStep1Page/>,
+    path: '/pro-monthly/step-1',
+    private: false,
+    hidden: true
+  },
+  {
+    id: useId,
+    element: <FreeTrialStep2Page/>,
+    path: '/pro-monthly/step-2',
     private: false,
     hidden: true
   },

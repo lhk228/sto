@@ -6,10 +6,12 @@ import introPic from '../../assets/imgs/clicknow.png';
 import canImg_1 from '../../assets/imgs/box-1.avif';
 import { Button } from '../Generic';
 import { Index } from '../1_HomePage_Intro/style';
+import { useNavigate } from 'react-router-dom';
 
 const OpportunityPage = () => {
+  const navigate = useNavigate();
   const onClick = () =>{
-    window.location.href = 'https://merisa-pricing.netlify.app/'
+    navigate('/pricing-home')
   }
   return (
     <Container>

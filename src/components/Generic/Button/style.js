@@ -25,12 +25,22 @@ const getType = ({type})=>{
         }
       }
     case 'step':
-      return {
-        width: '440px',
-        height: '66px',
-        boxShadow: '0px 4px 8px 0px rgba(0, 28, 56, 0.15)',
-        fontSize: '24px',
+      if(window.innerWidth <= 414){
+        return{
+          width: '100%',
+          height: '40px',
+          boxShadow: '0px 4px 8px 0px rgba(0, 28, 56, 0.15)',
+          fontSize: '18px',
+        }
+      }else{
+        return {
+          width: '440px',
+          height: '66px',
+          boxShadow: '0px 4px 8px 0px rgba(0, 28, 56, 0.15)',
+          fontSize: '24px',
       }
+      }
+      
 
     case 'sto':
       return {

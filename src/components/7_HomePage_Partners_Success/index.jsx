@@ -4,9 +4,11 @@ import {  Container, Down, Main, Name, Note, Position, SupTitle, Title, VideoBox
 
 import { Button } from '../Generic';
 import { Index } from '../1_HomePage_Intro/style';
+import { useNavigate } from 'react-router-dom';
 const PartnersPage = () => {
+  const navigate = useNavigate();
   const onClick =()=> {
-    window.location.href = 'https://merisa-pricing.netlify.app/'
+    navigate('/pricing-home');
   }
   return (
     <Container>

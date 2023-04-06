@@ -5,10 +5,12 @@ import { Container, Main,  QuesText, Icon, Title, Box,
 import { Button } from '../Generic';
 import { Index } from '../1_HomePage_Intro/style';
 import Logo from '../../assets/imgs/merisa.jpg'
+import { useNavigate } from 'react-router-dom';
 
 const AbilityPage = () => {
+  const navigate = useNavigate()
   const onClick = () => {
-    window.location.href = 'https://merisa-pricing.netlify.app/'
+    navigate('/pricing-home');
   }
   return (
     <Container>

@@ -7,10 +7,11 @@ import { Container, Introbox, IntroImg, IntroText, IntroTextBox, IntroTitle, Int
 import introPic from '../../assets/imgs/whyIntro.avif'
 import { Button } from '../Generic';
 import { Index } from '../1_HomePage_Intro/style';
-
+import { useNavigate } from 'react-router-dom';
 const WhyFourthPage = () => {
+  const navigate = useNavigate()
   const onClick =()=>{
-    window.location.href = 'https://merisa-pricing.netlify.app/'
+    navigate('/pricing-home')
   }
   return (
     <Container>

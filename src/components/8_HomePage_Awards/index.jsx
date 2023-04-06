@@ -3,9 +3,11 @@ import { Container, Img, Main, Text, Title, Up, Wrapper, } from './style';
 import photo from '../../assets/imgs/groupPhoto.avif'
 import { Button } from '../Generic';
 import { Index } from '../1_HomePage_Intro/style';
+import { useNavigate } from 'react-router-dom';
 const QuestionsPage = () => {
+  const navigate = useNavigate();
   const onClick =()=>{
-    window.location.href = 'https://merisa-pricing.netlify.app/'
+    navigate('/pricing-home')
   }
   return (
     <Container>
