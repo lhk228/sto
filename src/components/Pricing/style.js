@@ -44,6 +44,7 @@ const InputBox = styled.div`
   background: #0E3B68;
   margin: 20px 0;
   border-radius: 9px;
+  position: relative;
 `;
 const InputTitle = styled.p`
   font-size: 16px;
@@ -73,6 +74,13 @@ const Img = styled.img`
 cursor: pointer;
 `;
 
+const Alert = styled.p`
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  position: absolute;
+  top: 36rem;
+`
 
 export {Container, Main, Title, Text, VideoBox, InputBox, 
-      InputTitle, Wrapper, InputWrap, Img, Iconbox};
+      InputTitle, Wrapper, InputWrap, Img, Iconbox, Alert };

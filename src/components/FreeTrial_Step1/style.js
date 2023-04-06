@@ -5,6 +5,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background: linear-gradient( #E0ECFB, #F4F9FC);
+  height: 100vh;
   `;
 
 const Main = styled.div`
@@ -23,7 +24,7 @@ const Tit = styled.h1`
   text-align: center;
 `
 const Title = styled.h1`
-  font-size: 35px;
+  font-size: 28px;
   font-weight: 800;
   text-align: center;
 `
@@ -62,4 +63,5 @@ const InputBox = styled.div`
   border-radius: 9px;
 `;
 
-export {Container, Main, Title, Text, VideoBox, InputBox, Box, Tit};
+
+export {Container, Main, Title, Text, VideoBox, InputBox, Box, Tit,};

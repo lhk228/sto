@@ -32,6 +32,8 @@ const Iconbox = styled.div`
 `;
 const Img = styled.img`
 cursor: pointer;
+width: 48px;
+height: 48px;
 `;
 
 export {Container, Main, Iconbox, Img, Title, Text}

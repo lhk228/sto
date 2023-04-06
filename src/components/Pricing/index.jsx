@@ -1,10 +1,9 @@
 import React, {useState,} from 'react';
-import { Container, Main, Title, Text, VideoBox, InputBox, InputTitle, Wrapper, InputWrap, } from './style';
+import { Container, Main, Title, Text, VideoBox, Alert, InputBox, InputTitle, Wrapper, InputWrap, } from './style';
 import {Button, Input} from '../Generic';
 import { useNavigate } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import { Checkbox } from 'antd';
-import { message } from 'antd';
 import Footer from '../Contacts'
 
 
@@ -14,17 +13,13 @@ const Pricing = () => {
   const [inputValue, setInputValue] = useState('');
   const [inputValue1, setInputValue1] = useState('');
   const [isChecked, setIsChecked] = useState(false);
-  const warning = () => {
-    message.warning('답변 받으실 이메일을 입력해주세요.');
-  };
+  const [displayText, setDisplayText] = useState('');
 
   const onClick = () => {
     if (inputValue.length !== 0 && inputValue1.length !== 0 && isChecked) {
       navigate('/next-step')
     }else{
-      warning()
-      
-
+      setDisplayText('개인정보를 다시 확인하세요!');
     }
   };
 
@@ -56,10 +51,11 @@ const Pricing = () => {
                 <Input onChange={handleChange} placeholder='이메일 주소 입력(필수)'/>
                 <Input onChange={onChange} placeholder='핸드폰번호'/>
               </InputWrap>
-              <Button onClick={onClick} type={'sto'}>무료뉴스 신청하기</Button>
+              <Button onClick={onClick} type={'sto'}>무료뉴스 <br /> 신청하기</Button>
             </Wrapper>
             <Checkbox checked={isChecked} onChange={handleCheckboxChange} className='checkbox'>개인정보활용 동의</Checkbox>
           </InputBox>
+          <Alert>{displayText}</Alert>
           <Footer/>
       </Main>
     </Container>
