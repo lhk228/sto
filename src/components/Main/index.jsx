@@ -4,10 +4,10 @@ import {Button, Input} from '../Generic';
 import { useNavigate } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import { Checkbox } from 'antd';
-import Footer from '../Contacts'
+import Contact from '../Contacts'
 
 
-const Pricing = () => {
+const MainP = () => {
 
   const navigate = useNavigate();
   const [inputValue, setInputValue] = useState('');
@@ -56,11 +56,11 @@ const Pricing = () => {
             <Checkbox checked={isChecked} onChange={handleCheckboxChange} className='checkbox'>개인정보활용 동의</Checkbox>
           </InputBox>
           <Alert>{displayText}</Alert>
-          <Footer/>
+          <Contact/>
       </Main>
     </Container>
 
   )
 }
 
-export default Pricing
+export default MainP

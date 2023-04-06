@@ -3,13 +3,15 @@ import { Container, Main, Title, Tit, Text, VideoBox, Box} from './style';
 import {Button} from '../Generic';
 import ReactPlayer from 'react-player';
 import Footer from '../Contacts';
+import { useNavigate } from 'react-router-dom';
 
 const FreeTrialStep1 = () => {
+  const navigate = useNavigate()
   const onClick = () => {
-    window.location.href = 'https://merisa-success.netlify.app/';
+    navigate('/success-home');
   }
   const onClick2 = () => {
-    window.location.href = 'https://merisa-story.netlify.app/';
+    navigate('/story-home');
   }
   return (
     <Container>

@@ -13,9 +13,9 @@ export const Root = () => {
             return <Route key={id} path= {path} element={element} />
           })
         }
-        <Route path= '/' element={<Navigate to = {'/intro'} />}/>
+        <Route path= '/' element={<Navigate to = {'/main'} />}/>
         <Route path= '*' element={<h1>404 NOT FOUND</h1>}/>
-        </Route>       
+        </Route>
       </Routes>
     </BrowserRouter>
   )
