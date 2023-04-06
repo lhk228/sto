@@ -16,6 +16,11 @@ const Container = styled.div`
   align-items: center;
   max-width: 1170px;
   width: 100%;
+  @media ${device.tablet}{
+    max-width: 820px;
+    width: 100%;
+    padding: 0 20px;
+  }
 
 `;
 const Suptitle = styled.p`
@@ -23,6 +28,9 @@ const Suptitle = styled.p`
   font-weight: 700;
   font-size: 2.25rem;
   margin: 40px 0 15px 0;
+  @media ${device.tablet}{
+    font-size: 22px;
+  }
   @media ${device.mobile}{
     font-size: 18px;
   };
@@ -31,6 +39,10 @@ const Suptitle = styled.p`
 const Title = styled.h1`
   font-size: 96px;
   font-weight: 900;
+  text-align: center;
+  @media ${device.tablet}{
+    font-size: 68px;
+  }
   @media ${device.mobile}{
     font-size: 32px;
   };
@@ -43,6 +55,7 @@ const Text = styled.p`
   text-align: center;
   width: 80%;
   margin-bottom: 30px;
+ 
   @media ${device.mobile}{
     font-size: 17px;
     margin: 20px 0;
@@ -70,6 +83,9 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 15px;
+  @media ${device.tablet}{
+    display: none;
+    };
   @media ${device.mobile}{
     flex-direction: column;
     justify-content: center;

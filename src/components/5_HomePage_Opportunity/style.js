@@ -25,13 +25,19 @@ const Introbox = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 60px;
+  @media ${device.tablet}{
+    justify-content: center;
+  };
   @media ${device.mobile}{
-    justify-content: center
+    justify-content: center;
   }
 `;
 
 const IntroTextBox = styled.div`
   width: 45%;
+  @media ${device.tablet}{
+    width: 90%;
+  };
   @media ${device.mobile}{
     width: 90%
   }
@@ -42,6 +48,10 @@ const IntroTitle = styled.h1`
   line-height: 120%;
   font-size: 2.5rem;
   margin-bottom: 20px;
+  @media ${device.tablet}{
+    text-align: center;
+    font-size: 36px;
+  }
   @media ${device.mobile}{
     font-size: 30px;
     text-align: center;
@@ -50,10 +60,22 @@ const IntroTitle = styled.h1`
 
 const IntroImg = styled.img`
   width: 520px;
+  @media ${device.tablet}{
+    display: none;
+  };
   @media ${device.mobile}{
     display: none;
   }
 `;
+const TabletImg = styled.img`
+  display: none;
+  @media ${device.tablet}{
+    width: 516px;
+    display: block;
+    margin: 0 auto;
+  }
+`;
+
 const ResponsiveImg = styled.img`
   display: none;
   @media ${device.mobile}{
@@ -80,6 +102,9 @@ const QuesText = styled.p`
   font-weight: 700;
   line-height: 140%;
   font-size: 2.25rem;
+  @media ${device.tablet}{
+    font-size: 22px;
+  }
   @media ${device.mobile}{
     font-size: 22px;
     width: 90%;
@@ -126,6 +151,9 @@ Icon.Brand = styled(brand)`
   width: 198px;
   height: 22px;
   margin-top: 5px;
+  @media ${device.tablet}{
+    margin: 15px 0;
+  }
   @media ${device.mobile}{
     margin: 15px 0;
   }
@@ -140,6 +168,12 @@ const FunctionCard = styled.div`
   box-shadow: 0px 0px 30px 0px rgba(0, 44, 122, 0.13);
   background: #ffffff;
   margin-bottom: 30px;
+  @media ${device.tablet}{
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  
+  }
   @media ${device.mobile}{
     flex-direction: column;
     align-items: center;
@@ -165,6 +199,9 @@ const CanWrapper = styled.div`
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 15px;
+  @media ${device.tablet}{
+    justify-content: start;
+  }
 `;
 const CanText = styled.p`
   color: rgb(77, 82, 86);
@@ -188,6 +225,6 @@ const CanImg = styled.img`
 `;
 
 export {Container, Main, Introbox, IntroTextBox, IntroTitle, IntroImg, 
-  IntroText, Title, Icon, QuesText, AdHead, ResponsiveImg,
+  IntroText, Title, Icon, QuesText, AdHead, ResponsiveImg, TabletImg,
   FunctionCard, Suptitle, BoxUnit, CanWrapper, CanText, CanImgBox, CanImg
 }

@@ -4,7 +4,7 @@ import {ReactComponent as facebook} from '../../assets/icons/social-logo-faceboo
 import {ReactComponent as twitter} from '../../assets/icons/social-logo-twitter.svg';
 import {ReactComponent as linkedin} from '../../assets/icons/social-logo-linkedin.svg';
 import {ReactComponent as instagram} from '../../assets/icons/social-logo-instagram.svg';
-import {device} from '../Generic/responsive'
+import {device} from '../Generic/responsive';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -19,20 +19,27 @@ const Main = styled.div`
   justify-content: space-between;
   max-width: 1170px;
   width: 100%;
+  @media ${device.tablet}{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  };
   @media ${device.mobile} { 
     flex-direction: column;
     gap: 20px;
     align-items: center;
-
   }
+
 `;
 
 const Box = styled.div`
-display: flex;
-flex-direction: column;
-gap: ${({gap})=> (gap ? `${gap}` : '15px')};
-width: ${({width})=> (width ? `${width}` : '210px')};
-
+  display: flex;
+  flex-direction: column;
+  gap: ${({gap})=> (gap ? `${gap}` : '15px')};
+  width: ${({width})=> (width ? `${width}` : '210px')};
+  @media ${device.tablet}{
+    width: 80%;
+  };
 
 `;
 
@@ -49,7 +56,7 @@ const Text = styled.p`
   cursor: ${({cursor})=>(cursor ? `${cursor}` : 'pointer')};
   line-height: 140%;
   font-size: 0.875rem;
-  &: hover{
+  &:hover{
     text-decoration: ${({textDecoration})=>(textDecoration ? `${textDecoration}` : 'underline')}
   }
 `;

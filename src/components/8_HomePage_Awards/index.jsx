@@ -13,7 +13,7 @@ const QuestionsPage = () => {
     <Container>
       <Up>
         <Main>
-          <Title color='#1CBCFF'>다음 'Two Comma Club' 수상자가 될 수 있습니까?</Title>
+          <Title>다음 'Two Comma Club' 수상자가 될 수 있습니까?</Title>
           <Text 
             color='rgba(255, 255, 255, 0.8)' 
             width='80%'

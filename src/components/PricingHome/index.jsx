@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect}from 'react';
 import { Container, Main, Title, Text, Wrapper, Plan, Box, Line, Note, NoteWrap, Position, Wrap } from './style';
 import {Button} from '../Generic';
 import AbilityPage from '../6_HomePage_Ability';
@@ -10,6 +10,9 @@ const PricingHome = () => {
   const onClick =()=>{
     navigate('/pro-monthly/step-1')
   }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Container>
       <Main>

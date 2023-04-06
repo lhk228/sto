@@ -30,6 +30,9 @@ const Section = styled.div`
   color: var(--color-6Z-dzM8-5);
   gap: 5px;
   margin-top: 30px;
+  @media ${device.tablet}{
+    width: 95%
+    };
   @media ${device.mobile}{
     width: 95%;
   }
@@ -59,6 +62,11 @@ const Wrapper = styled.div`
   width: 1108px;
   height: 640px;
   padding: 20px;
+  @media ${device.tablet}{
+    width: 95%;
+    height: 400px;
+    
+    };
   @media ${device.mobile}{
     width: 95%;
     height: 220px;

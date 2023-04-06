@@ -46,6 +46,12 @@ const BrandWrap = styled.div`
   height: 50px;
   align-items: center;
   gap: 45px;
+  @media ${device.tablet}{
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  
+  }
   @media ${device.mobile}{
     flex-direction: column;
     width: 380px;
@@ -59,6 +65,9 @@ const Icon = styled.div``;
 Icon.Tony = styled(tony)`
   width: 25%;
   height: 50px;
+  @media ${device.tablet}{
+    width: 100%;
+  }
   @media ${device.mobile}{
     width: 270px;
   }
@@ -66,6 +75,9 @@ Icon.Tony = styled(tony)`
 Icon.Master = styled(master)`
   width: 25%;
   height: 50px;
+  @media ${device.tablet}{
+    width: 100%;
+  }
   @media ${device.mobile}{
     width: 270px;
   }
@@ -73,6 +85,9 @@ Icon.Master = styled(master)`
 Icon.Lady = styled(lady)`
   width: 25%;
   height: 50px;
+  @media ${device.tablet}{
+    width: 100%;
+  }
   @media ${device.mobile}{
     width: 270px;
   }
@@ -80,6 +95,9 @@ Icon.Lady = styled(lady)`
 Icon.Camping = styled(camping)`
   width: 25%;
   height: 50px;
+  @media ${device.tablet}{
+    width: 100%;
+  }
   @media ${device.mobile}{
     width: 270px;
   }

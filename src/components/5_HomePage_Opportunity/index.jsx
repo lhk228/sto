@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Introbox, IntroImg, IntroText, IntroTextBox, IntroTitle,  
   Main,  QuesText, AdHead, Title, Icon, FunctionCard, Suptitle, BoxUnit,
-  CanWrapper, CanText, CanImgBox, CanImg, ResponsiveImg} from './style';
+  CanWrapper, CanText, CanImgBox, CanImg, ResponsiveImg, TabletImg} from './style';
 import introPic from '../../assets/imgs/clicknow.png';
 import canImg_1 from '../../assets/imgs/box-1.avif';
 import { Button } from '../Generic';
@@ -21,6 +21,7 @@ const OpportunityPage = () => {
           <IntroTextBox>
             <IntroTitle>ClickFunnels는 "퍼널(Funnels)"을 통해 고객들이 여러분을 찾아오도록 도와줍니다!</IntroTitle>
             <ResponsiveImg src={introPic}/>
+            <TabletImg src={introPic}/>
             <IntroText>우리는 최초의 퍼널 빌더이자, 페이스북, 구글, 유튜브, 인스타그램 또는 틱톡과 같은 사이트에서 사용자를 모아서 당신의 상점으로 이끌어주는 첫 번째 플랫폼입니다!
             </IntroText>
             <IntroText>만약 당신이 페이스북, 구글, 유튜브, 인스타그램, 혹은 틱톡에서 광고를 클릭해본 적이 있다면, 그 광고를 만든 사람이 제대로 했다면 아마도 당신이 바로 이동한 페이지가 ClickFunnels의 한 퍼널 중 하나였을 가능성이 높습니다!</IntroText>

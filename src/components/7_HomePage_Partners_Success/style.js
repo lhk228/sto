@@ -10,6 +10,10 @@ const Container = styled.div`
   @media ${device.mobile} { 
     min-width: 360px;
     margin-top: 0px;
+  };
+
+  @media ${device.tablet}{
+    margin-top: 0;
   }
 `;
 

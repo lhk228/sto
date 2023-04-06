@@ -1,16 +1,14 @@
 import React from 'react';
 import {  Box, Container, Icon, Img, Main, Text, Wrapper } from './style';
 import logo from '../../assets/imgs/merisa.jpg'
-import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
-  const navigate = useNavigate()
   return (
     <Container>
       <Main>
         <Box gap='0' width='285px'>
           
-          <Img onClick={()=>navigate('/pricing')} src = {logo} />
+          <Img src = {logo} />
           <Text  textDecoration='none' cursor='normal'>ClickFunnels.com, an Etison Product.</Text>
           <Text  textDecoration='none' cursor='normal'>판권 소유 © 2019-2023.</Text>
           <Text  textDecoration='none' cursor='normal'> 부산광역시 서구 구덕로 225</Text>

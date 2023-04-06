@@ -23,6 +23,10 @@ const Introbox = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media ${device.tablet}{
+    flex-direction: column;
+    gap: 30px;
+  };
   @media ${device.mobile}{
     flex-direction: column;
     gap: 30px;
@@ -31,6 +35,9 @@ const Introbox = styled.div`
 
 const IntroTextBox = styled.div`
   width: 45%;
+  @media ${device.tablet}{
+    width: 90%;
+  };
   @media ${device.mobile}{
     width: 84%;
   }
@@ -41,6 +48,10 @@ const IntroTitle = styled.h1`
   line-height: 120%;
   font-size: 2.5rem;
   margin-bottom: 20px;
+  @media ${device.tablet}{
+    text-align: center;
+    margin-bottom: 35px;
+  };
   @media ${device.mobile}{
     font-size: 29px;
   }
@@ -78,6 +89,9 @@ const Title = styled.h1`
   text-align: center;
   width: 60%;
   margin: 50px 0 20px 0;
+  @media ${device.tablet}{
+    width: 85%;
+  };
   @media ${device.mobile}{
     font-size: 29px;
     width: 90%;
@@ -91,6 +105,9 @@ const SubTitle = styled.p`
   line-height: 150%;
   text-align: center;
   width: 54%;
+  @media ${device.tablet}{
+    width: 90%;
+  };
   @media ${device.mobile}{
     font-size: 17px;
     width: 90%;
@@ -102,6 +119,12 @@ const CompareWrapper = styled.div`
   justify-content: space-between;
   width: 70%;
   margin: 40px 0;
+  @media ${device.tablet}{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+  };
   @media ${device.mobile}{
     flex-direction: column;
     gap: 30px;
@@ -114,6 +137,9 @@ const CompareBox = styled.div`
   border-radius: 8px;
   width: 48.6%;
   padding: 25px 36px;
+  @media ${device.tablet}{
+    width: 90%;
+  };
   @media ${device.mobile}{
     width: 100%;
   }
@@ -166,6 +192,9 @@ const QuesText = styled.p`
   font-weight: 700;
   line-height: 140%;
   font-size: 2.25rem;
+  @media ${device.tablet}{
+    font-size: 32px;
+  };
   @media ${device.mobile}{
     font-size: 14px;
   }
@@ -178,6 +207,9 @@ const AdHead = styled.h1`
   font-size: 2rem;
   text-align: center;
   margin: 10px 0 30px 0;
+  @media ${device.tablet}{
+    width: 90%;
+  };
   @media ${device.mobile}{
     font-size: 22px;
     width: 90%;

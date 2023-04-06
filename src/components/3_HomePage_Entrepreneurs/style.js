@@ -33,9 +33,13 @@ const SectionTop = styled.div`
   max-width: 1108px;
   width: 100%;
   padding: 20px;
+  @media ${device.tablet}{
+    width: 95%;
+    padding: 10px;
+  };
   @media ${device.mobile}{
     display: none;
-  }
+  };
 `;
 const IconBox = styled.div`
   display: flex;
@@ -115,6 +119,12 @@ const Wrapper = styled.div`
   justify-content: space-between;
   width: 1108px;
   margin: 70px 0 50px 0;
+  @media ${device.tablet}{
+    width: 80%;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    };
   @media ${device.mobile}{
     width: 98%;
     flex-direction: column;

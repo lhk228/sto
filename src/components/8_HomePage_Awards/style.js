@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {device} from '../Generic/responsive'
 
 const Container = styled.div`
   display: flex;
@@ -31,8 +32,11 @@ const Title = styled.h1`
   line-height: 120%;
   font-size: 2.5rem;
   text-align: center;
-  color: ${({color})=>(color? `${color}` : 'rgb(29, 46, 59)')};
+  color: #1CBCFF;
   margin-bottom: 30px;
+  @media ${device.tablet}{
+    width: 95%;
+  }
 `;
 
 const Text = styled.p`
@@ -43,7 +47,9 @@ const Text = styled.p`
   text-align: ${({textAlign})=>(textAlign? `${textAlign}`: 'start')};
   width: ${({width})=>(width ? `${width}`: '100%' )};
   margin: ${({margin})=>(margin ? `${margin}` : '0')};
- 
+  @media ${device.tablet}{
+    width: 94%;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -53,6 +59,10 @@ const Wrapper = styled.div`
   gap: 10px;
   margin: 30px 0;
   width: 100%;
+  @media ${device.tablet}{
+    flex-direction: column;
+    align-items: center;
+  }
   `;
   
   const Img = styled.img`

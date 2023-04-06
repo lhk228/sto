@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import ReactPlayer from 'react-player';
 import {  Container, Down, Main, Name, Note, Position, SupTitle, Title, VideoBox, VideoContainer, VideoWrap, } from './style';
 
@@ -10,6 +10,9 @@ const PartnersPage = () => {
   const onClick =()=> {
     navigate('/pricing-home');
   }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Container>
       

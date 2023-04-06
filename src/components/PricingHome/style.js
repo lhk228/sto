@@ -25,8 +25,11 @@ const Title = styled.h1`
   color : ${({color})=>(color ? `${color}` : 'var(--color-6Z-dzM8-1);')};
   width: ${({width})=>(width ? `${width}` : '100%')};
   text-align: center;
+  @media ${device.tablet}{
+    font-size: ${({fontSize})=>(fontSize ? `${fontSize}` : '3.5rem;')};
+  }
   @media ${device.mobile} { 
-    font-size: ${({fontSize})=>(fontSize ? `${fontSize}` : '2.5rem;')};   
+    font-size: ${({fontSize})=>(fontSize ? `${fontSize}` : '2.5rem;')};
   }
 `;
 
@@ -43,7 +46,11 @@ const Wrap = styled.div`
 `;
 const Wrapper = styled.div`
   display: flex;
+  height: auto;
   gap: 10px;
+  @media ${device.tablet} { 
+    flex-direction: column-reverse;
+  };
   @media ${device.mobile} { 
     flex-direction: column-reverse;
   }
@@ -54,6 +61,9 @@ const Position =styled.div`
   justify-content: space-between;
   align-items: center;
   height: 900px;
+  @media ${device.tablet} { 
+    height: 165rem;
+  }
   @media ${device.mobile} { 
     height: 2600px;
   }
@@ -77,6 +87,9 @@ const Box = styled.div`
   background: ${({backGround})=>(backGround ? `${backGround}` : '#FFFFFF')};
   box-shadow: 0px 10px 40px 0px rgba(170, 183, 199, 0.3);
   position: relative;
+  @media ${device.tablet} { 
+    width: 40rem
+  }
 `;
 
 const Line = styled.div`
@@ -86,6 +99,9 @@ const Line = styled.div`
   position: absolute;
   top: 100px;
   left: 120px;
+  @media ${device.tablet} { 
+    left: 260px;
+  }
 `;
 const NoteWrap = styled.div`
   margin: 20px 0;

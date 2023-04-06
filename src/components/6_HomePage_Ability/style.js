@@ -106,6 +106,10 @@ const Title = styled.h1`
   text-align: center;
   width: 60%;
   margin-bottom: 20px;
+  @media ${device.tablet}{
+    width: 87%;
+
+  }
   @media ${device.mobile} { 
     font-size:26px;
     width: 90%;
@@ -180,6 +184,9 @@ const AdBox = styled.div`
   border-radius: 9px;
   width: 90%;
   padding: 40px 50px;
+  @media ${device.tablet}{
+    padding: 40px;
+  }
   @media ${device.mobile} { 
     padding: 30px;
   }
@@ -192,6 +199,9 @@ const AdTitle = styled.h1`
   font-size: 2.5rem;
   text-align: center;
   color: #FFFFFF;
+  @media ${device.tablet}{
+    font-size: 2.25rem;
+  }
   @media ${device.mobile} { 
     font-size: 21px;
   }
