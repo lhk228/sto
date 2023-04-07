@@ -21,12 +21,17 @@ const Container = styled.div`
     width: 100%;
     padding: 0 20px;
   }
+  @media ${device.mobile}{
+    padding: 0 10px;
+    margin-bottom: 30px;
+  };
 
 `;
 const Suptitle = styled.p`
   font-family: 'Caveat', cursive;
   font-weight: 700;
   font-size: 2.25rem;
+  text-align: center;
   margin: 40px 0 15px 0;
   @media ${device.tablet}{
     font-size: 22px;

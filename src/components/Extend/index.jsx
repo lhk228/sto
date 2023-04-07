@@ -5,13 +5,13 @@ import ReactPlayer from 'react-player';
 import Footer from '../Contacts';
 import { useNavigate } from 'react-router-dom';
 
-const FreeTrialStep1 = () => {
+const Extend = () => {
   const navigate = useNavigate()
   const onClick = () => {
-    navigate('/extend');
+    navigate('/success-home');
   }
   const onClick2 = () => {
-    navigate('/success-home');
+    navigate('/story-home');
   }
   return (
     <Container>
@@ -48,4 +48,4 @@ const FreeTrialStep1 = () => {
   )
 }
 
-export default FreeTrialStep1
+export default Extend;

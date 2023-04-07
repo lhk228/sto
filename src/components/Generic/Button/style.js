@@ -41,7 +41,14 @@ const getType = ({type})=>{
       }
       }
       
-
+      case 'main':
+        return {
+          width: '200px',
+          height: 'auto',
+          boxShadow: '0px 4px 8px 0px rgba(0, 28, 56, 0.15)',
+          fontSize: '15px',
+          padding: '5px 16px'
+        }
     case 'sto':
       return {
         width: '110px',

@@ -1,10 +1,10 @@
 import React, {useState,} from 'react';
-import { Container, Main, Title, Text, Alert, InputBox, InputTitle, Wrapper, InputWrap, } from './style';
+import { Container, Main, Title, Text, VideoBox, Alert, InputBox, InputTitle, Wrapper, InputWrap, } from './style';
 import {Button, Input} from '../Generic';
 import { useNavigate } from 'react-router-dom';
+import ReactPlayer from 'react-player';
 import { Checkbox } from 'antd';
 import Contact from '../Contacts'
-import VideoPage from '../2_HomePage_Video';
 
 
 const MainP = () => {
@@ -41,22 +41,23 @@ const MainP = () => {
           <Title>"쩐의 미래" 3분뉴스</Title>
           <Text>오늘자 AI·3D·STO 뉴스를</Text>
           <Text>3분 요약하여 "무료"로 보내드립니다</Text>
-      </Main>
-      <VideoPage/>
-      <Main>
-          
+          <VideoBox>
+            <ReactPlayer width={'100%'} height={'100%'} url={'https://youtu.be/tkOcbaGJshk'}></ReactPlayer>
+          </VideoBox>
           <InputBox>
             <InputTitle>뉴스 받을 메일주소 입력란</InputTitle>
             <Wrapper>
-              <InputWrap>
+              
+                <InputWrap>
                 <Input onChange={handleChange} placeholder='이메일 주소 입력(필수)'/>
                 <Input onChange={onChange} placeholder='핸드폰번호'/>
-              </InputWrap>
-              <Button onClick={onClick} type={'sto'}>무료뉴스 <br /> 신청하기</Button>
+
+                </InputWrap>
+                  <Checkbox checked={isChecked} onChange={handleCheckboxChange} className='checkbox'>개인정보활용 동의</Checkbox>
+                <Alert>{displayText}</Alert>  
+              <Button type='main' onClick={onClick} >무료뉴스 신청하기</Button>
             </Wrapper>
-            <Checkbox checked={isChecked} onChange={handleCheckboxChange} className='checkbox'>개인정보활용 동의</Checkbox>
           </InputBox>
-          <Alert>{displayText}</Alert>
           <Contact/>
       </Main>
     </Container>

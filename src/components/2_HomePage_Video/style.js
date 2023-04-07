@@ -16,7 +16,7 @@ const Container = styled.div`
   align-items: center;
   max-width: 1170px;
   width: 100%;
-  /* margin-bottom: 100px; */
+  margin-bottom: 100px;
 `;
 
 const Section = styled.div`

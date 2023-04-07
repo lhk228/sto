@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import {device} from "../Generic/responsive"
 
 const Container = styled.div`
   display: flex;
@@ -12,13 +12,15 @@ const Main = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  max-width: 400px;
-  width: 100%;
-  padding: 20px 0;
+  width: 200%;
+  margin-top: 10px;
+  @media ${device.mobile}{
+    width: 100%;
+  }
   `;
 
 const Title = styled.p`
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
   text-align: center;
   `;
@@ -29,6 +31,16 @@ const Text = styled.p`
 `;
 const Iconbox = styled.div`
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 15px;
+  @media ${device.tablet}{
+    width: 70%;
+    margin-top: 10px;
+  }
+  @media ${device.mobile}{
+    width: 100%;
+  }
 `;
 const Img = styled.img`
 cursor: pointer;
