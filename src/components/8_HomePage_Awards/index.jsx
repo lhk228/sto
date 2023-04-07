@@ -13,7 +13,7 @@ const QuestionsPage = () => {
     <Container>
       <Up>
         <Main>
-          <Title>다음 'Two Comma Club' 수상자가 될 수 있습니까?</Title>
+          <Title>성공사례를 듣고 싶나요?</Title>
           <Text 
             color='rgba(255, 255, 255, 0.8)' 
             width='80%'
@@ -31,9 +31,9 @@ const QuestionsPage = () => {
             textAlign='center'
             fontSize ='32px'
           >
-              당신은 다음이 될 것인가? 오늘 ClickFunnels를 무료로 시작하세요!
+              우리의 3D HW IT기반기술로 운영됩니다 지금 바로 시작 해 보세요!
           </Text>
-          <Button onClick={onClick} type={'large'}>오늘 무료 평가판을 시작하세요</Button>
+          <Button onClick={onClick} type={'large'}>무료 시작 버튼 </Button>
           <Index color='rgba(255, 255, 255, 0.6)'>계약 없음 • 언제든지 해지 가능</Index>    
         </Main> 
       </Up>

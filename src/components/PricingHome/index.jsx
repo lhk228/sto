@@ -16,8 +16,8 @@ const PricingHome = () => {
   return (
     <Container>
       <Main>
-        <Title width='65%'>계획을 선택하고 무료 14일 평가판 시작</Title>
-        <Text margin='15px 0'>'Funnel Hacker' 계획으로 연간 최대 $3,468 절약</Text>
+        <Title width='65%'>노하우 영상과 더불어 PDF 전자책을 1만원에 받아보세요</Title>
+        <Text margin='15px 0'>CEO.기업가들이 말하는 3D메버에 대해 어떻게 생각하나요?</Text>
         <Position>
           <Wrap>
             <Plan>연간 할인</Plan>
@@ -32,20 +32,16 @@ const PricingHome = () => {
               <Text margin='10px 0' fontSize='13px'>매년 <b>청구($240/년 절약)</b></Text>
               <Button onClick={onClick} type='price'>무료 평가판 시작</Button>
               <NoteWrap>
-                <Note>1 웹사이트</Note>
-                <Note>20 깔때기</Note>
-                <Note>1 관리 사용자</Note>
-                <Note>1 도메인</Note>
-                <Note>3개 코스</Note>
-                <Note>1,000명의 학생</Note>
-                <Note>10,000개의 연락처</Note>
-                <Note>무제한 워크플로우</Note>
-                <Note>무제한 페이지</Note>
-                <Note>무제한 제품</Note>
-                <Note>무제한 이메일 시퀀스</Note>
-                <Note>기본 분석</Note>
-                <Note>CF1 유지 관리 모드 계획</Note>
-                <Note>—</Note>
+                <Note>[후기영상]</Note>
+                <Note>[홍보영상]</Note>
+                <Note>[맛보기강의]</Note>
+                <Note>[1주차 강의]</Note>
+                <Note>[2주차 강의]</Note>
+                <Note>...공개 / 비공개 나눠서 오픈</Note>
+                <Note>25만원 결제 후 오픈</Note>
+                <Note>CEO들의 1억 10억 100억 챌린지에 도전해 보세요!</Note>
+                <Note>2023년 3D메버는 100명의 경영자, 크리에이터, 유튜버, 셀럽들의 도전을 장려하여 놀라운 결과물을 돕고 있습니다.</Note>
+                <Note>1시간 3D컨설팅 신청바로가기 </Note>
                 <Note>—</Note>
                 <Note>—</Note>
                 <Note>—</Note>

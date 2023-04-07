@@ -1,4 +1,4 @@
-import React, {useState,} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import { Container, Main, Title, Text, VideoBox, Alert, InputBox, InputTitle, Wrapper, InputWrap, } from './style';
 import {Button, Input} from '../Generic';
 import { useNavigate } from 'react-router-dom';
@@ -18,6 +18,10 @@ const MainP = () => {
   const onClick = () => {
     if (inputValue.length !== 0 && inputValue1.length !== 0 && isChecked) {
       navigate('/next-step')
+      console.log(
+       
+      );
+
     }else{
       setDisplayText('개인정보를 다시 확인하세요!');
     }
@@ -32,17 +36,27 @@ const MainP = () => {
   const handleCheckboxChange = (event) => {
       setIsChecked(event.target.checked);
     };
-  
-  
+    const playerRef = useRef(null);
 
+    useEffect(() => {
+      const hasPlayedBefore = localStorage.getItem('hasPlayedBefore');
+  
+      if (!hasPlayedBefore) {
+        playerRef.current?.getInternalPlayer()?.playVideo();
+        localStorage.setItem('hasPlayedBefore', true);
+      }
+    }, []);
+  
   return (
     <Container>
       <Main>
-          <Title>"쩐의 미래" 3분뉴스</Title>
-          <Text>오늘자 AI·3D·STO 뉴스를</Text>
-          <Text>3분 요약하여 "무료"로 보내드립니다</Text>
+          <Title>  “CEO를 위한” 3분 뉴스</Title>
+          <Text>앞서가는 CEO를 위해, </Text>
+          <Text>최신 IT기술을 활용한 경영/마케팅/BM 뉴스를 <br />
+                매일 3분 요약하여 “무료”로 보내드립니다.
+          </Text>
           <VideoBox>
-            <ReactPlayer width={'100%'} height={'100%'} url={'https://youtu.be/tkOcbaGJshk'}></ReactPlayer>
+            <ReactPlayer  ref={playerRef} playing={true} width={'100%'} height={'100%'} url={'https://youtu.be/tkOcbaGJshk'}></ReactPlayer>
           </VideoBox>
           <InputBox>
             <InputTitle>뉴스 받을 메일주소 입력란</InputTitle>

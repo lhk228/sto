@@ -57,7 +57,8 @@ const Text = styled.p`
   };
   @media ${device.mobile}{
     font-size: 18px;
-    margin: 12px 0;
+    margin: 12px 7px;
+    
   };
 `;
 const Box = styled.div`
@@ -99,7 +100,7 @@ const BoxWrap = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 30px 0;
+  margin: 0px 0;
   gap: 20px;
   @media ${device.tablet}{
     flex-direction: column;

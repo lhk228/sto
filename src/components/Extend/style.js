@@ -53,7 +53,6 @@ const Text = styled.p`
   margin: 18px 0;
   @media ${device.tablet}{
     font-size: 22px;
-    margin: 14px 0;
   };
   @media ${device.mobile}{
     font-size: 18px;
