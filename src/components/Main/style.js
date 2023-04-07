@@ -1,11 +1,11 @@
 import styled from "styled-components";
-
+import {device} from "../Generic/responsive"
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background: linear-gradient( #E0ECFB, #F4F9FC);
+  background: #F5F9FC;
   `;
 
 const Main = styled.div`
@@ -13,13 +13,17 @@ const Main = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  max-width: 400px;
+  max-width:1170px;
   width: 100%;
   padding: 20px 0;
+  /* @media ${device.mobile}{
+    max-width: 400px;
+  } */
   `;
 
 const Title = styled.h1`
-  font-size: 34px;
+  font-size: 60px;
+  /* font-size: 34px; */
   font-weight: 700;
   text-align: center;
 `
@@ -27,12 +31,6 @@ const Text = styled.p`
   font-size: 18px;
   text-align: center;
   margin: 8px 0;
-`;
-
-const VideoBox = styled.div`
-  width: 96%;
-  height: 230px;
-  
 `;
 
 const InputBox = styled.div`
@@ -82,5 +80,5 @@ const Alert = styled.p`
   top: 36rem;
 `
 
-export {Container, Main, Title, Text, VideoBox, InputBox, 
+export {Container, Main, Title, Text, InputBox, 
       InputTitle, Wrapper, InputWrap, Img, Iconbox, Alert };

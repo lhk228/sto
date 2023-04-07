@@ -1,10 +1,10 @@
 import React, {useState,} from 'react';
-import { Container, Main, Title, Text, VideoBox, Alert, InputBox, InputTitle, Wrapper, InputWrap, } from './style';
+import { Container, Main, Title, Text, Alert, InputBox, InputTitle, Wrapper, InputWrap, } from './style';
 import {Button, Input} from '../Generic';
 import { useNavigate } from 'react-router-dom';
-import ReactPlayer from 'react-player';
 import { Checkbox } from 'antd';
 import Contact from '../Contacts'
+import VideoPage from '../2_HomePage_Video';
 
 
 const MainP = () => {
@@ -41,9 +41,10 @@ const MainP = () => {
           <Title>"쩐의 미래" 3분뉴스</Title>
           <Text>오늘자 AI·3D·STO 뉴스를</Text>
           <Text>3분 요약하여 "무료"로 보내드립니다</Text>
-          <VideoBox>
-            <ReactPlayer width={'100%'} height={'100%'} url={'https://youtu.be/tkOcbaGJshk'}></ReactPlayer>
-          </VideoBox>
+      </Main>
+      <VideoPage/>
+      <Main>
+          
           <InputBox>
             <InputTitle>뉴스 받을 메일주소 입력란</InputTitle>
             <Wrapper>

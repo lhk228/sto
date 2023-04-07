@@ -5,10 +5,9 @@ import iconCheck from '../../assets/icons/check.svg';
 import { useNavigate } from 'react-router-dom';
 
 const Intro = () => {
-  const navigate = useNavigate()
-  const onClick = () => {
-    navigate('/pricing-home')
-  }
+
+  const navigate = useNavigate();
+  const onClick = () => { navigate('/pricing-home') }
   return (
     <Container>
       <Main>

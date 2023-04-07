@@ -90,6 +90,9 @@ const Box = styled.div`
   @media ${device.tablet} { 
     width: 40rem
   }
+  @media ${device.mobile} { 
+    width: 360px;
+  }
 `;
 
 const Line = styled.div`
@@ -101,6 +104,9 @@ const Line = styled.div`
   left: 120px;
   @media ${device.tablet} { 
     left: 260px;
+  }
+  @media ${device.tablet} { 
+    left: 120px;
   }
 `;
 const NoteWrap = styled.div`

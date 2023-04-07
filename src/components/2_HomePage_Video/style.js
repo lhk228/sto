@@ -16,7 +16,7 @@ const Container = styled.div`
   align-items: center;
   max-width: 1170px;
   width: 100%;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 `;
 
 const Section = styled.div`
@@ -29,7 +29,7 @@ const Section = styled.div`
   background: var(--color-6Z-dzM8-7);
   color: var(--color-6Z-dzM8-5);
   gap: 5px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   @media ${device.tablet}{
     width: 95%
     };

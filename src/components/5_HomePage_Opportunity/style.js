@@ -74,6 +74,9 @@ const TabletImg = styled.img`
     display: block;
     margin: 0 auto;
   }
+  @media ${device.mobile}{
+    display: none;
+  }
 `;
 
 const ResponsiveImg = styled.img`
