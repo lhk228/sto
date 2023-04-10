@@ -3,7 +3,8 @@ import { Container, Wrapper, Icon } from './style'
 
 const Input =forwardRef(({
   type, 
-  onChange, 
+  onChange,
+  onFocus,
   placeholder, 
   name, 
   value, 
@@ -11,20 +12,21 @@ const Input =forwardRef(({
   width,
   height,
   icon,
-  prefix
+  prefix, 
 }, ref)=>{
   return(
     <Wrapper>
       <Icon>{icon}</Icon>
       <Container 
-      ref={ref}
-      prefix={prefix}
+        ref={ref}
+        prefix={prefix}
         icon={icon}
         placeholder={placeholder}
         name={name}
         value={value}
         defaultValue={defaultValue}
-        onChange={onChange} 
+        onChange={onChange}
+        onFocus={onFocus}
         type={type}
         widt={width}
         height={height}

@@ -98,27 +98,60 @@ const InputWrap = styled.div`
     flex-direction: column;
   }
   @media ${device.mobile}{
-    width: 90%;;
+    width: 90%;
   };
 `;
 
 
 
-const Alert = styled.p`
+
+const AlertEmail =styled.p`
   color: red;
   font-size: 14px;
   text-align: center;
   position: absolute;
   top: 80px;
-  left: 34rem;
+  left: 2rem;
   @media ${device.tablet}{
-    top: 10.8rem;
+    top: 4.55rem;
     left: 15rem;
   }
   @media ${device.mobile}{
     left: 5.5rem;
   }
-`
+`;
+
+const AlertTel =styled.p`
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  top: 80px;
+  left: 18.4rem;
+  @media ${device.tablet}{
+    top: 8rem;
+    left: 15rem;
+  }
+  @media ${device.mobile}{
+    left: 5.5rem;
+  }
+  `;
+
+  const AlertCheck = styled.p`
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    left: 34rem;
+    @media ${device.tablet}{
+      top: 10.8rem;
+      left: 15rem;
+    }
+    @media ${device.mobile}{
+      left: 5.5rem;
+    }
+  `;
 
 export {Container, Main, Title, Text, VideoBox, InputBox, 
-      InputTitle, Wrapper, InputWrap, Alert };
+      InputTitle, Wrapper, InputWrap, AlertCheck, AlertEmail, AlertTel };

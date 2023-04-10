@@ -38,7 +38,7 @@ const BoxWrap = styled.div`
 `;
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   @media ${device.tablet}{
     flex-direction: column;
@@ -71,15 +71,21 @@ const Box2 = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
-  width: 30%;
+  width: 50%;
+  @media ${device.tablet}{
+    width: 75%;
+  }
   @media ${device.mobile}{
-    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
   }
   
 `;
 const Li = styled.p`
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 900;
   cursor: pointer;
   &:hover {
     color: #1CBCFF;
