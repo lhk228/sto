@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Main, Title, Tit, Text, VideoBox, Box, TitleWrap, BoxWrap} from './style';
+import { Container, Main, Title, Tit, Text, VideoBox, Box, TitleWrap, BoxWrap, Line, Line1} from './style';
 import {Button} from '../Generic';
 import ReactPlayer from 'react-player';
 import Footer from '../Contacts';
@@ -27,7 +27,8 @@ const FreeTrialStep1 = () => {
                 <VideoBox>
                   <ReactPlayer width={'100%'} height={'100%'} url={'https://youtu.be/tkOcbaGJshk'}></ReactPlayer>
                 </VideoBox>
-                <Button onClick={onClick} type={'full'}>책10권 이상의 가치를, 비밀특강 10만(x)->1만원에 바로가기</Button>
+                <Button onClick={onClick} type={'full'}>책10권 이상의 가치를, 비밀특강 10만 1만원에 바로가기</Button>
+                <Line1/>
               </Box>
             </TitleWrap>
             <TitleWrap>
@@ -36,12 +37,11 @@ const FreeTrialStep1 = () => {
                 <VideoBox>
                   <ReactPlayer width={'100%'} height={'100%'} url={'https://youtu.be/tkOcbaGJshk'}></ReactPlayer>
                 </VideoBox>
-                <Button onClick={onClick2} type={'full'}>1강~10강 CEO 자동수익화 비밀, 250만(x)>25만원에 바로가기</Button>
+                <Button onClick={onClick2} type={'full'}> 1강~10강 CEO 자동수익화 비밀, 250만 25만원에 바로가기</Button>
+                <Line/>
               </Box>
             </TitleWrap>
           </BoxWrap>
-
-          
           <Footer/>
       </Main>
     </Container>

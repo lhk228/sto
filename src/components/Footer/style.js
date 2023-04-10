@@ -1,9 +1,4 @@
 import styled from "styled-components";
-import {ReactComponent as youtube} from '../../assets/icons/social-logo-youtube.svg'
-import {ReactComponent as facebook} from '../../assets/icons/social-logo-facebook.svg';
-import {ReactComponent as twitter} from '../../assets/icons/social-logo-twitter.svg';
-import {ReactComponent as linkedin} from '../../assets/icons/social-logo-linkedin.svg';
-import {ReactComponent as instagram} from '../../assets/icons/social-logo-instagram.svg';
 import {device} from '../Generic/responsive';
 const Container = styled.div`
   display: flex;
@@ -11,12 +6,13 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   border-top: 1px solid #EBECEF;
-  padding: 80px 0;
+  padding: 40px 0;
 `;
 
 const Main = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   max-width: 1170px;
   width: 100%;
   @media ${device.tablet}{
@@ -29,64 +25,73 @@ const Main = styled.div`
     gap: 20px;
     align-items: center;
   }
-
 `;
 
 const Box = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${({gap})=> (gap ? `${gap}` : '15px')};
-  width: ${({width})=> (width ? `${width}` : '210px')};
-  @media ${device.tablet}{
-    width: 80%;
-  };
+  align-items: center;
 
 `;
-
+const BoxWrap = styled.div`
+  display: flex;
+`;
 const Wrapper = styled.div`
   display: flex;
-  gap: 15px;
-  align-items: center;
-  margin-top: 20px;
-`;
-const Text = styled.p`
-  visibility: ${({visibility})=>(visibility ?`${visibility}` : 'visible')};
-  text-align: left;
-  font-weight: ${({fontWeight})=>(fontWeight ? `${fontWeight}` : '400')};
-  cursor: ${({cursor})=>(cursor ? `${cursor}` : 'pointer')};
-  line-height: 140%;
-  font-size: 0.875rem;
-  &:hover{
-    text-decoration: ${({textDecoration})=>(textDecoration ? `${textDecoration}` : 'underline')}
+  justify-content: space-evenly;
+  width: 100%;
+  @media ${device.tablet}{
+    flex-direction: column;
+    align-items: center;
+  }
+  @media ${device.mobile}{
+    flex-direction: column;
+    align-items: center;
   }
 `;
-const Icon = styled.div``;
-
+const Icon = styled.img``;
 const Img = styled.img`
-  width: 215px;
-  height:35px;
+  width: 110px;
+  height:40px;
   margin-bottom: 20px;
+  margin-right: 50px;
   cursor: pointer;
+  `;
+const Contact = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: ${({borderRight})=>(borderRight ? `${borderRight}` : 'none')};
+  padding: 0 40px;
 `;
-Icon.Youtube = styled(youtube)`
-  opacity: 25%;
+const Text = styled.div`
+  font-size: 1.2rem;
+`;
+const Box2 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 30%;
+  @media ${device.mobile}{
+    width: 80%;
+  }
+  
+`;
+const Li = styled.p`
+  font-size: 1.2rem;
+  font-weight: 700;
   cursor: pointer;
+  &:hover {
+    color: #1CBCFF;
+  };
 `;
-Icon.Facebook = styled(facebook)`
-  opacity: 25%;
-  cursor: pointer; 
+const Box3 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-top: 50px;
+  @media ${device.mobile}{
+    width: 80%;
+  }
 `;
-Icon.Twitter = styled(twitter)`
-  opacity: 25%;
-  cursor: pointer;
-`;
-Icon.Linkedin = styled(linkedin)`
-  opacity: 25%;
-  cursor: pointer;
-`;
-Icon.Instagram = styled(instagram)`
-  opacity: 25%;
-  cursor: pointer;
-`;
-
-export {Container, Main, Box, Wrapper, Text, Icon, Img }
+export {Container, Main, Img, Wrapper, Box, Box3, Contact, Text, BoxWrap, Box2, Li, Icon }

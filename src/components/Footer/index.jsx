@@ -1,67 +1,84 @@
 import React from 'react';
-import {  Box, Container, Icon, Img, Main, Text, Wrapper } from './style';
-import logo from '../../assets/imgs/merisa.jpg'
+import { Box, Box2, Box3, BoxWrap, Contact, Container, Icon, Img, Li, Main, Text, Wrapper,} from './style';
+import logo from '../../assets/imgs/mever-logo.png'
+import sns1 from '../../assets/icons/sns1.png'
+import sns2 from '../../assets/icons/sns2.png'
+import sns3 from '../../assets/icons/sns3.png'
+import sns4 from '../../assets/icons/sns4.png'
+import sns5 from '../../assets/icons/sns5.png'
+import sns6 from '../../assets/icons/sns6.png'
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const onDirect1 =() => {
+    navigate('/main')
+  }
+  const onDirect2 =() => {
+    navigate('/next-step')
+  }
+  const onDirect3 =() => {
+    navigate('/pricing-home')
+  }
+  const onDirect4 =() => {
+    navigate('/success-page')
+  }
+  const onClick1 = () => {
+    window.location.href = 'https://www.youtube.com/channel/UCXHaChrER0XYPrR43S7mx5A';
+  }
+  const onClick2 = () => {
+    window.location.href = '';
+  }
+  const onClick3 = () => {
+    window.location.href = 'https://www.instagram.com/official_mever/';
+  }
+  const onClick4 = () => {
+    window.location.href = 'https://www.facebook.com/people/%EB%A9%94%EB%B2%84/100088805142901/';
+  }
+  const onClick5 = () => {
+    window.location.href = 'https://blog.naver.com/mevershop';
+  }
+  const onClick6 = () => {
+    window.location.href = 'https://pf.kakao.com/_cLNxib';
+  }
+
   return (
     <Container>
       <Main>
-        <Box gap='0' width='285px'>
+        <Wrapper>
+          <Box>
+            <Img src = {logo} />
+            <BoxWrap>
+              <Contact borderRight = '1px solid #000' >
+                <Text>(주)메버</Text>
+                <Text>대표 이사민</Text>
+                <Text>사업자 번호 653-81-02062</Text>
+              </Contact>
+              <Contact>
+                <Text>1688-9050</Text>
+                <Text>sm@mever.me</Text>
+                <Text>서울특별시 강남대로 373 홍우빌딩</Text>
+              </Contact>
+            </BoxWrap>
+        </Box>
+        <Box2>
+          <Li onClick={onDirect1}>Main</Li>
+          <Li onClick={onDirect2}>Pricing</Li>
+          <Li onClick={onDirect3}>Story</Li>
+          <Li onClick={onDirect4}>Success</Li>
+        </Box2>
+        </Wrapper>
+            <Box3>
+              <Icon onClick={onClick1} src={sns1}/>
+              <Icon onClick={onClick2} src={sns2}/>
+              <Icon onClick={onClick3} src={sns3}/>
+              <Icon onClick={onClick4} src={sns4}/>
+              <Icon onClick={onClick5} src={sns5}/>
+              <Icon onClick={onClick6} src={sns6}/>
+            </Box3>
+        
           
-          <Img src = {logo} />
-          <Text  textDecoration='none' cursor='normal'>ClickFunnels.com, an Etison Product.</Text>
-          <Text  textDecoration='none' cursor='normal'>판권 소유 © 2019-2023.</Text>
-          <Text  textDecoration='none' cursor='normal'> 부산광역시 서구 구덕로 225</Text>
-          <Wrapper>
-            <Icon.Youtube/>
-            <Icon.Facebook/>
-            <Icon.Twitter/>
-            <Icon.Linkedin/>
-            <Icon.Instagram/>
-          </Wrapper>
-        </Box>
-        <Box>
-          <Text textDecoration='none' fontWeight='900' cursor='normal'>제품</Text>
-          <Text>세일즈 퍼널</Text>
-          <Text>웹사이트</Text>
-          <Text>전자상거래 상점</Text>
-          <Text>방문 페이지</Text>
-          <Text>블로그</Text>
-          <Text>고객센터</Text>
-          <Text>이메일 마케팅</Text>
-          <Text>워크플로우</Text>
-        </Box>
-        <Box>
-          <Text visibility = 'hidden'></Text>
-          <Text>온라인 코스</Text>
-          <Text>회원 사이트</Text>
-          <Text>CRM</Text>
-          <Text>ClickFunnels 편집기</Text>
-          <Text>A/B 테스트</Text>
-          <Text>해석학</Text>
-          <Text>글로벌 제품</Text>
-          <Text>가격</Text>
-        </Box>
-        <Box>
-          <Text textDecoration='none' fontWeight='900' cursor='normal'>회사</Text>
-          <Text>오리진 스토리</Text>
-          <Text>팀을 만나다</Text>
-          <Text>위치</Text>
-          <Text>채용</Text>
-          <Text>제휴 프로그램</Text>
-          <Text>합법적인</Text>
-          <Text>개인 정보 정책</Text>
-        </Box>
-        <Box>
-          <Text textDecoration='none' fontWeight='900' cursor='normal'>돕다</Text>
-          <Text>ClickFunnels 2.0 로그인</Text>
-          <Text>ClickFunnels 클래식 로그인</Text>
-          <Text>ClickFunnels 블로그</Text>
-          <Text>지원 센터</Text>
-          <Text>공식 페이스북 그룹</Text>
-          <Text>비즈니스 도구</Text>
-          <Text>ClickFunnels 상태</Text>
-        </Box>
+          
       </Main>
 
       
