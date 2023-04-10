@@ -19,27 +19,27 @@ const EntrepreneursHomePage = () => {
         <SectionTop>
           <IconBox>
             <Icon.Template/>
-            <Text>검증된 퍼널 <br /> 템플릿</Text>
+            <Text>검증된 3D홈페이지 <br /> 3D웹페이지</Text>
           </IconBox>
           <IconBox>
             <Icon.Drag/>
-            <Text>드래그 앤 <br /> 드롭 편집기</Text>
+            <Text>AI 자동 <br /> 영상 편집기</Text>
           </IconBox>
           <IconBox>
             <Icon.Cart/>
-            <Text>고전확률 <br /> 체크아웃</Text>
+            <Text>유입율 <br /> 전환율 확인</Text>
           </IconBox>
           <IconBox>
             <Icon.Courses/>
-            <Text>멤버 지역 <br /> 및 코스</Text>
+            <Text>CEO 지역별 <br /> 교육과정 및 도전</Text>
           </IconBox>
           <IconBox>
             <Icon.Analytics/>
-            <Text>분석 및 <br/> 인사이트</Text>
+            <Text>AI데이터 분석<br/>및 인사이트</Text>
           </IconBox>
           <IconBox>
             <Icon.Testing/>
-            <Text>A/B 분할 <br/> 테스트</Text>
+            <Text>업종별 리딩 <br/> 경쟁사 압도</Text>
           </IconBox>
         </SectionTop>
         <StarWrap>
@@ -49,26 +49,26 @@ const EntrepreneursHomePage = () => {
           <Icon.Star/>
           <Icon.Star/>
         </StarWrap>
-        <Title>세계적인 기업가들이 ClickFunnels를 즐겨 사용합니다</Title>
-        <SubTitle>직접 확인하세요...</SubTitle>
+        <Title>성공하는 CEO들이 메버 3D를 사용합니다</Title>
+        <SubTitle>직접 검증하세요...</SubTitle>
 
         <Wrapper>
           <ClientCard>
             <ClientImg src= {client1}/>
-            <ClientName>Daymond John</ClientName>
-            <ClientType>인증된 ClickFunnels 사용자</ClientType>
+            <ClientName>건설회사 엘림(주)CEO</ClientName>
+            <ClientType>1.10.100도전 사용자</ClientType>
             <ClientText>"코스, 책, 라이브 이벤트, 실물 제품 등 어떤 비즈니스든 제가 지분을 가지고 있다면 반드시 퍼널이 필요합니다. 퍼널은 복잡성을 줄이고 고객이 원하는 것을 더 빠르게 얻을 수 있도록 도와주며 수익을 증가시킵니다."</ClientText>
           </ClientCard>
           <ClientCard>
             <ClientImg src= {client2}/>
-            <ClientName>Tai Lopez</ClientName>
-            <ClientType>Verified ClickFunnels User</ClientType>
+            <ClientName>메리사 CEO</ClientName>
+            <ClientType>3D CEO교육 사용자</ClientType>
             <ClientText>“<b>ClickFunnels helps you not only sell a product but create a movement!</b> You’ve condensed the cycle, where you can have a business up and running (fail or succeed) within 24 hours... ”</ClientText>
           </ClientCard>
           <ClientCard>
             <ClientImg src= {client3}/>
-            <ClientName>Eileen Wilder</ClientName>
-            <ClientType>Verified ClickFunnels User</ClientType>
+            <ClientName>강남지인병원 CEO</ClientName>
+            <ClientType>3D홈페이지.3D마케팅 사용자</ClientType>
             <ClientText>“I dove into the ClickFunnels software. A few months later, <b>our family made more money in 1 day than we had ever made before.</b> We cannot believe we get to not only make money, but we get to change the world doing what we loving.”</ClientText>
           </ClientCard>
         </Wrapper>

@@ -13,13 +13,13 @@ const QuestionsPage = () => {
     <Container>
       <Up>
         <Main>
-          <Title>성공사례를 듣고 싶나요?</Title>
+          <Title>CEO들의 1억•10억•100억 도전 & 성공과정을 확인하세요!</Title>
           <Text 
             color='rgba(255, 255, 255, 0.8)' 
             width='80%'
             textAlign ='center'
           >
-            지금까지 ClickFunnels는 2,096명의 기업가, 소기업 소유주, 크리에이터, 교사, 코치 및 인플루언서가 퍼널에 대해 'Two Comma Club' 상을 받도록 도왔습니다!
+            메버는 2025년까지 1,004명의 CEO,기업가,크리에이터,강사,코치,인플루언서,유튜버가 '1•10•100' 상을 받도록 돕습니다!
           </Text>
           <Wrapper>
             <Img src={photo}/>
@@ -31,9 +31,9 @@ const QuestionsPage = () => {
             textAlign='center'
             fontSize ='32px'
           >
-              우리의 3D HW IT기반기술로 운영됩니다 지금 바로 시작 해 보세요!
+              메버는 3D•AI 기술회사로 CEO의 성공을 돕습니다. 지금 바로 도전 해 보세요!
           </Text>
-          <Button onClick={onClick} type={'large'}>무료 시작 버튼 </Button>
+          <Button onClick={onClick} type={'large'}>1•10•100 도전하기! </Button>
           <Index color='rgba(255, 255, 255, 0.6)'>계약 없음 • 언제든지 해지 가능</Index>    
         </Main> 
       </Up>

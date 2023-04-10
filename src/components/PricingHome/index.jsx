@@ -16,93 +16,93 @@ const PricingHome = () => {
   return (
     <Container>
       <Main>
-        <Title width='65%'>노하우 영상과 더불어 PDF 전자책을 1만원에 받아보세요</Title>
-        <Text margin='15px 0'>CEO.기업가들이 말하는 3D메버에 대해 어떻게 생각하나요?</Text>
+        <Title width='65%'>성공하는 CEO들의 <br></br>필수과정 • 도전 • 네트웍</Title>
+        <Text margin='15px 0'>CEO.기업가들이 말하는 3D메버 후기를 확인 해 보세요</Text>
         <Position>
           <Wrap>
-            <Plan>연간 할인</Plan>
-            <Plan>월간 계획</Plan>
+            <Plan>후기 확인</Plan>
+            <Plan>우리 계획</Plan>
           </Wrap>
           <Wrapper>
             <Box>
-              <Title fontSize='34px'>Basic</Title>
-              <Text fontSize ='14px'>일반적으로 $147/월</Text>
+              <Title fontSize='34px'>온라인 CEO과정</Title>
+              <Text fontSize ='14px'>2,500,000원</Text>
               <Line/>
-              <Title fontWeight = '700' fontSize='32px'>$127/월</Title>
-              <Text margin='10px 0' fontSize='13px'>매년 <b>청구($240/년 절약)</b></Text>
-              <Button onClick={onClick} type='price'>무료 평가판 시작</Button>
+              <Title fontWeight = '700' fontSize='32px'>250,000원</Title>
+              <Text margin='10px 0' fontSize='13px'>10주 <b>스터디 (225만원 절약)</b></Text>
+              <Button onClick={onClick} type='price'>온라인 바로 시작</Button>
               <NoteWrap>
-                <Note>[후기영상]</Note>
-                <Note>[홍보영상]</Note>
-                <Note>[맛보기강의]</Note>
-                <Note>[1주차 강의]</Note>
-                <Note>[2주차 강의]</Note>
-                <Note>...공개 / 비공개 나눠서 오픈</Note>
-                <Note>25만원 결제 후 오픈</Note>
-                <Note>CEO들의 1억 10억 100억 챌린지에 도전해 보세요!</Note>
-                <Note>2023년 3D메버는 100명의 경영자, 크리에이터, 유튜버, 셀럽들의 도전을 장려하여 놀라운 결과물을 돕고 있습니다.</Note>
-                <Note>1시간 3D컨설팅 신청바로가기 </Note>
+                <Note>제공1. [10강 온라인 영상]-1,000,000원</Note>
+                <Note>제공2. [10강 PDF 전자책]-150,000원</Note>
+                <Note>제공3. [특강 강의]-100,000원</Note>
+                <Note>제공4. [실전컨설팅 1시간]-250,000원</Note>
+                <Note>제공5. [비즈니스협업MOU]-500,000원</Note>
+                <Note>제공6. [온라인 자격증발행]-100,000원</Note>
+                <Note>제공7. [3D홈페이지 맛보기]-100,000원</Note>
+                <Note>제공8. [3D마케팅 맛보기]-100,000원</Note>
+                <Note>제공9. [3D컨텐츠 맛보기]-100,000원</Note>
+                <Note>제공10.[3D자동화 맛보기]-100,000원</Note>
+                <Note>—</Note>
+                <Note>—</Note>
                 <Note>—</Note>
                 <Note>—</Note>
                 <Note>—</Note>
               </NoteWrap>
-              <Button onClick={onClick} type='price'>무료 평가판 시작</Button>         
+              <Button onClick={onClick} type='price'>온라인 바로 시작</Button>         
             </Box>
             <Box>
-              <Title fontSize='34px'>Pro</Title>
-              <Text fontSize ='14px'>일반적으로 $197/월</Text>
+              <Title fontSize='34px'>오프라인CEO과정</Title>
+              <Text fontSize ='14px'>10,000,000원</Text>
               <Line/>
-              <Title fontWeight = '700' fontSize='32px'>$157/월</Title>
-              <Text margin='10px 0' fontSize='13px'>매년 <b>청구($480/년 절약)</b></Text>
-              <Button onClick={onClick} type='price'>무료 평가판 시작</Button>
+              <Title fontWeight = '700' fontSize='32px'>2,500,000원</Title>
+              <Text margin='10px 0' fontSize='13px'>10주 <b>스터디 (750만원 절약)</b></Text>
+              <Button onClick={onClick} type='price'>오프라인 바로 시작</Button>
               <NoteWrap>
-                <Note>1 웹사이트</Note>
-                <Note><b>100 </b>깔때기</Note>
-                <Note><b>5</b> 관리 사용자</Note>
-                <Note><b>3</b> 도메인</Note>
-                <Note><b>15개</b> 코스</Note>
-                <Note><b>10,000명</b>의 학생</Note>
-                <Note><b>25,000개</b>의 연락처</Note>
-                <Note>무제한 워크플로우</Note>
-                <Note>무제한 페이지</Note>
-                <Note>무제한 제품</Note>
-                <Note>무제한 이메일 시퀀스</Note>
-                <Note>기본 분석</Note>
-                <Note><b>제휴 프로그램</b></Note>
-                <Note><b>API 액세스</b></Note>
-                <Note><b>ShareFunnels</b></Note>
-                <Note><b>액체 테마 편집기</b></Note>
-                <Note><b>CF1 유지 관리 모드 계획</b></Note>
+              <Note>제공1. [10강 온라인 영상]-1,000,000원</Note>
+                <Note>제공2. [10강 PDF 전자책]-150,000원</Note>
+                <Note>제공3. [특강 강의]-100,000원</Note>
+                <Note>제공4. [실전컨설팅 1시간]-250,000원</Note>
+                <Note>제공5. [비즈니스협업MOU]-500,000원</Note>
+                <Note>제공6. [온라인 자격증발행]-100,000원</Note>
+                <Note>제공7. [3D홈페이지 맛보기]-100,000원</Note>
+                <Note>제공8. [3D마케팅 맛보기]-100,000원</Note>
+                <Note>제공9. [3D컨텐츠 맛보기]-100,000원</Note>
+                <Note>제공10.[3D자동화 맛보기]-100,000원</Note>
+                <Note><b>제공11. 운영수익 제휴-1,000,000원</b></Note>
+                <Note><b>제공12. CEO 네트워크-2,000,000원</b></Note>
+                <Note><b>제공13. 협업.셀럽교류-1,000,000원</b></Note>
+                <Note><b>제공14. 10주 오프코칭권-1,000,000원</b></Note>
+                <Note><b>제공15. 10주 오프수강권-2,500,000원</b></Note>
               </NoteWrap>
-              <Button onClick={onClick} type='price'>무료 평가판 시작</Button>     
+              <Button onClick={onClick} type='price'>오프라인 바로 시작</Button>     
             </Box>
             <Box backGround = 'rgb(21, 30, 82)'>
-              <Title color='#FFF' fontSize='34px'>Pro</Title>
-              <Text color='#FFF' fontSize ='14px'>일반적으로 $497/월</Text>
+              <Title color='#FFF' fontSize='34px'>1•10•100도전</Title>
+              <Text color='#FFF' fontSize ='14px'>발생매출의 20~30%</Text>
               <Line/>
-              <Title color='var(--color-6Z-dzM8-7)' fontWeight = '700' fontSize='32px'>$208/월</Title>
-              <Text color='#FFF' margin='10px 0' fontSize='13px'>매년 <b>청구($480/년 절약)</b></Text>
-              <Button onClick={onClick} type='price'>무료 평가판 시작</Button>
+              <Title color='var(--color-6Z-dzM8-7)' fontWeight = '700' fontSize='32px'>실비+매출의 10%</Title>
+              <Text color='#FFF' margin='10px 0' fontSize='13px'>1년단위 <b>실행 (매출.지분.협업)</b></Text>
+              <Button onClick={onClick} type='price'>1•10•100도전 시작</Button>
               <NoteWrap>
-                <Note color='#FFF'>3 웹사이트</Note>
-                <Note color='#FFF'><b>무제한</b> 퍼널</Note>
-                <Note color='#FFF'><b>15</b>명의 관리 사용자</Note>
-                <Note color='#FFF'><b>9</b>개 도메인</Note>
-                <Note color='#FFF'><b>200개</b> 코스</Note>
-                <Note color='#FFF'><b>20,000명</b>의 학생</Note>
-                <Note color='#FFF'><b>200,000</b> 연락처</Note>
-                <Note color='#FFF'>무제한 워크플로우</Note>
-                <Note color='#FFF'>무제한 페이지</Note>
-                <Note color='#FFF'>무제한 제품</Note>
-                <Note color='#FFF'>무제한 이메일 시퀀스</Note>
-                <Note color='#FFF'><b>고급 </b>분석</Note>
-                <Note color='#FFF'>제휴 프로그램</Note>
-                <Note color='#FFF'>API 액세스</Note>
-                <Note color='#FFF'>ShareFunnels</Note>
-                <Note color='#FFF'>액체 테마 편집기</Note>
-                <Note color='#FFF'>CF1 유지 관리 모드 계획</Note>
+                <Note color='#FFF'>제공1. [10강 온라인 영상]-1,000,000원</Note>
+                <Note color='#FFF'>제공2. [10강 PDF 전자책]-150,000원</Note>
+                <Note color='#FFF'>제공3. [특강 강의]-100,000원</Note>
+                <Note color='#FFF'>제공4. [실전컨설팅 1시간]-250,000원</Note>
+                <Note color='#FFF'>제공5. [비즈니스협업MOU]-500,000원</Note>
+                <Note color='#FFF'>제공6. [온라인 자격증발행]-100,000원</Note>
+                <Note color='#FFF'>제공7. [3D AI홈페이지]-10,000,000원~</Note>
+                <Note color='#FFF'>제공8. [3D AI마케팅]-10,000,000원~</Note>
+                <Note color='#FFF'>제공9. [3D AI컨텐츠]-10,000,000원~</Note>
+                <Note color='#FFF'>제공10.[3D AI자동화]-10,000,000원~</Note>
+                <Note color='#FFF'>제공11. 운영수익 제휴-1,000,000원</Note>
+                <Note color='#FFF'>제공12. CEO 네트워크-2,000,000원</Note>
+                <Note color='#FFF'>제공13. 협업.셀럽교류-1,000,000원</Note>
+                <Note color='#FFF'>제공14. 10주 오프코칭권-1,000,000원</Note>
+                <Note color='#FFF'>제공15. 10주 오프수강권-2,500,000원</Note>
+                <Note color='#FFF'>제공16. 1년 코치.실행자 배치-실비</Note>
+                <Note color='#FFF'>제공17. 1년 HW.SW 배치-실비</Note>
               </NoteWrap>
-              <Button onClick={onClick} type='price'>무료 평가판 시작</Button>     
+              <Button onClick={onClick} type='price'>1•10•100도전 시작</Button>     
             </Box>
           </Wrapper>
         </Position>

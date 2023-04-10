@@ -18,11 +18,11 @@ const Main = styled.div`
   justify-content: space-between;
   max-width: 1170px;
   width: 100%;
-  padding: 20px 0;
+  padding: 40px 0;
   `;
 
 const Tit = styled.h1`
-  margin-top: 20px;
+  margin: 20px 0 40px 0;
   font-size: 4rem;
   font-weight: 800;
   text-align: center;
@@ -50,7 +50,7 @@ const Text = styled.p`
   font-size: 26px;
   font-weight: 600;
   text-align: center;
-  margin: 18px 0;
+  margin: 18px 0 30px 0;
   @media ${device.tablet}{
     font-size: 22px;
     margin: 14px 0;
@@ -100,7 +100,7 @@ const BoxWrap = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 0px 0;
+  margin: 25px 0 50px 0;
   gap: 20px;
   @media ${device.tablet}{
     flex-direction: column;

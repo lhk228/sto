@@ -95,6 +95,7 @@ const Container = styled.button `
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Gowun Dodum', sans-serif;
   border-radius: 3px;
   border: none;
   color: var(--color-6Z-dzM8-5);
