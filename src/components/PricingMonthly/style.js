@@ -75,7 +75,6 @@ const Plan = styled.p`
   padding: 10px 20px;
   cursor: pointer;
   border-bottom: ${({borderBottom})=>(borderBottom ? `${borderBottom}` : 'none')};
-
 `;
 
 const Box = styled.div`

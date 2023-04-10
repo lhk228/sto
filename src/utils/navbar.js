@@ -8,6 +8,7 @@ import FreeTrialStep1Page from "../pages/FreeTrial_Step1";
 import FreeTrialStep2Page from "../pages/FreeTrial_Step2";
 import ExtendPage from "../pages/Extend";
 import FeaturesPage from "../pages/Features";
+import PricingMonthlyPage from "../pages/PricingMonthly";
 
 export const navbar = [
   {
@@ -55,6 +56,13 @@ export const navbar = [
     id: useId,
     element: <PricingHomePage/>,
     path: '/pricing-home',
+    private: false,
+    hidden: true
+  },
+  {
+    id: useId,
+    element: <PricingMonthlyPage/>,
+    path: '/pricing-home/monthly',
     private: false,
     hidden: true
   },

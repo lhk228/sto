@@ -114,7 +114,7 @@ const BoxWrap = styled.div`
 
 const Line = styled.div`
   background: linear-gradient(to right , #FFFFFF, rgb(255, 0, 0));
-  width: 55px;
+  width: 37px;
   height: 2px;
   position: absolute;
   top: 315px;
@@ -125,13 +125,13 @@ const Line = styled.div`
   }
   @media ${device.mobile} { 
     top: 230px;
-    left: 295px;
+    left: 305px;
   }
 `;
 
 const Line1 = styled.div`
   background: linear-gradient(to right , #FFFFFF, rgb(255, 0, 0));
-  width: 48px;
+  width: 38px;
   height: 2px;
   position: absolute;
   top: 315px;
@@ -142,7 +142,7 @@ const Line1 = styled.div`
   }
   @media ${device.mobile} { 
     top: 230px;
-    left: 295px;
+    left: 300px;
   }
 `;
 

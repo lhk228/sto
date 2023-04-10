@@ -5,7 +5,7 @@ import AbilityPage from '../6_HomePage_Ability';
 import QuestionsPage from '../8_HomePage_Questions';
 import Footer from '../Footer';
 import { useNavigate } from 'react-router-dom';
-const PricingHome = () => {
+const PricingMonthly = () => {
   const navigate = useNavigate();
   const onClick =()=>{
     navigate('/pro-monthly/step-1')
@@ -14,17 +14,17 @@ const PricingHome = () => {
     window.scrollTo(0, 0);
   }, []);
   const onNavigate = () =>{
-    navigate('/pricing-home/monthly');
+    navigate('/pricing-home');
   }
   return (
     <Container>
       <Main>
-        <Title width='65%'>성공하는 CEO들의 <br></br>필수과정 • 도전 • 네트웍</Title>
+        <Title width='65%'> copy성공하는 CEO들의 <br></br>필수과정 • 도전 • 네트웍</Title>
         <Text margin='15px 0'>CEO.기업가들이 말하는 3D메버 후기를 확인 해 보세요</Text>
         <Position>
           <Wrap>
-            <Plan borderBottom ='3px solid #000'>후기 확인</Plan>
-            <Plan onClick={onNavigate}>우리 계획</Plan>
+            <Plan onClick={onNavigate}>후기 확인</Plan>
+            <Plan borderBottom ='3px solid #000'>우리 계획</Plan>
           </Wrap>
           <Wrapper>
             <Box>
@@ -54,7 +54,7 @@ const PricingHome = () => {
               <Button onClick={onClick} type='price'>온라인 바로 시작</Button>         
             </Box>
             <Box>
-              <Title fontSize='34px'>오프라인CEO과정</Title>
+              <Title fontSize='34px'>copy 오프라인CEO과정</Title>
               <Text fontSize ='14px'>10,000,000원</Text>
               <Line/>
               <Title fontWeight = '700' fontSize='32px'>2,500,000원</Title>
@@ -83,7 +83,7 @@ const PricingHome = () => {
               <Title color='#FFF' fontSize='34px'>1•10•100도전</Title>
               <Text color='#FFF' fontSize ='14px'>발생매출의 20~30%</Text>
               <Line/>
-              <Title color='var(--color-6Z-dzM8-7)' fontWeight = '700' fontSize='32px'>실비+매출의 10%</Title>
+              <Title color='var(--color-6Z-dzM8-7)' fontWeight = '700' fontSize='32px'>copy 실비+매출의 10%</Title>
               <Text color='#FFF' margin='10px 0' fontSize='13px'>1년단위 <b>실행 (매출.지분.협업)</b></Text>
               <Button onClick={onClick} type='price'>1•10•100도전 시작</Button>
               <NoteWrap>
@@ -119,4 +119,4 @@ const PricingHome = () => {
   )
 }
 
-export default PricingHome;
+export default PricingMonthly;
