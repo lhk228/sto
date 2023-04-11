@@ -1,6 +1,5 @@
 import React from 'react';
-import { Progress} from 'antd';
-import { Container, Main, Title, Text, Note, Wrapper, Coution, CoWrap, Icon, CardBox, MainWrapper, TextBox, Head, IconWrap, IconText, Awrap, Img } from './style';
+import { Container, Main, Title, Text, Wrapper, Coution, Icon, CardBox, MainWrapper, TextBox, Head, IconWrap, IconText, Awrap, Img } from './style';
 import { Input, Button } from '../Generic';
 import { useNavigate } from 'react-router-dom';
 import Logo from '../../assets/imgs/merisa.jpg'
