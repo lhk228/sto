@@ -16,29 +16,13 @@ const FreeTrialStep2 = () => {
       <MainWrapper>
         <Main>
           <Title>무료 14일 평가판 시작</Title>
-          <Progress percent={90} showInfo={false} />
-          <Note>계정 만들기: 2/2단계</Note>
           <Wrapper>
-            <CoWrap>
-              <Input placeholder='명'/>
-              <Input placeholder='성'/>
-            </CoWrap>
-            <Input placeholder='전화 번호'/>
+            <Input placeholder='성명'/>
+            <Input  placeholder='전화 번호'/>
             <Input placeholder='이메일 주소'/>
             <Input placeholder='주소'/>
-            <Input placeholder='아파트, 건물, 층'/>
-            <CoWrap>
-              <Input placeholder='도시'/>
-              <Input placeholder='우편 번호'/>
-            </CoWrap>
-            <CoWrap>
-              <Input placeholder='국가'/>
-              <Input placeholder='지역'/>
-            </CoWrap>
-            <CardBox>
-            <Input placeholder='카드 번호'/>
-            <Coution>왜? 평가판 종료 후 구독 및 비즈니스가 중단 없이 계속될 수 있도록 결제 수단을 요청합니다.</Coution>
-            </CardBox>
+            <Input placeholder='상세주소'/>
+            
             <Button onClick={onClick} type={'step'}>내 무료 평가판 시작</Button>
           </Wrapper>
           <Coution>오늘부터 14일 무료 이용 후 월 $197(관련 세금 별도). 대시보드 또는 이메일(support@clickfunnels.com)을 통해 취소하십시오. 또한 서비스 약관, 개인 정보 보호 정책 및 제휴 계약에 동의합니다.</Coution>

@@ -4,12 +4,10 @@ import MainPage from "../pages/Main"
 import StoryHomePage from "../pages/StoryHome";
 import SuccessHomePage from "../pages/SuccessHome";
 import PricingHomePage from "../pages/PricingHome";
-import FreeTrialStep1Page from "../pages/FreeTrial_Step1";
-import FreeTrialStep2Page from "../pages/FreeTrial_Step2";
 import ExtendPage from "../pages/Extend";
 import FeaturesPage from "../pages/Features";
 import PricingMonthlyPage from "../pages/PricingMonthly";
-
+import PaymentFormPage from "../pages/Payment_Form";
 export const navbar = [
   {
     id: useId, 
@@ -67,17 +65,11 @@ export const navbar = [
     hidden: true
   },
 
+
   {
     id: useId,
-    element: <FreeTrialStep1Page/>,
-    path: '/pro-monthly/step-1',
-    private: false,
-    hidden: true
-  },
-  {
-    id: useId,
-    element: <FreeTrialStep2Page/>,
-    path: '/pro-monthly/step-2',
+    element: <PaymentFormPage/>,
+    path: '/payment-form',
     private: false,
     hidden: true
   },

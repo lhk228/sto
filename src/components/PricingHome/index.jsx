@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const PricingHome = () => {
   const navigate = useNavigate();
   const onClick =()=>{
-    navigate('/pro-monthly/step-1')
+    navigate('/payment-form')
   }
   useEffect(() => {
     window.scrollTo(0, 0);
