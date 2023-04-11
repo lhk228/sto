@@ -8,6 +8,11 @@ import ExtendPage from "../pages/Extend";
 import FeaturesPage from "../pages/Features";
 import PricingMonthlyPage from "../pages/PricingMonthly";
 import PaymentFormPage from "../pages/Payment_Form";
+import Step1Page from "../pages/Form_Step_1";
+import Step2Page from "../pages/Form_Step_2";
+import Step3Page from "../pages/Form_Step_3";
+import Step4Page from "../pages/Form_Step_4";
+
 export const navbar = [
   {
     id: useId, 
@@ -78,6 +83,36 @@ export const navbar = [
     id: useId,
     element: <FeaturesPage/>,
     path: '/features',
+    private: false,
+    hidden: true
+  },
+
+  {
+    id: useId,
+    element: <Step1Page/>,
+    path: '/form/step-1',
+    private: false,
+    hidden: true
+  },
+
+  {
+    id: useId,
+    element: <Step2Page/>,
+    path: '/form/step-2',
+    private: false,
+    hidden: true
+  },
+  {
+    id: useId,
+    element: <Step3Page/>,
+    path: '/form/step-3',
+    private: false,
+    hidden: true
+  },
+  {
+    id: useId,
+    element: <Step4Page/>,
+    path: '/form/step-4',
     private: false,
     hidden: true
   },

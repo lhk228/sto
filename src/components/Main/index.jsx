@@ -37,7 +37,7 @@ const MainP = () => {
 
   const onSubmit = (event) => {
     if (data.Email.includes('@', '.') &&
-        data.Phone.includes('-') &&
+        data.Phone.length> 10 &&
         isChecked) {
       navigate('/next-step');
       event.preventDefault();
@@ -51,7 +51,7 @@ const MainP = () => {
     if(!data.Email.includes('@', '.')){
       setDisplayEmail('입력한 이메일 주소 확인해 주세요!');
     };
-    if(!data.Phone.includes('-')){
+    if(!data.Phone.length > 10){
       setDisplayTel('입력한 전화번호 확인해 주세요!');
     }
 
