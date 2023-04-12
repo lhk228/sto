@@ -1,5 +1,5 @@
 import React, {useEffect}from 'react';
-import { Container, Main, Title, Text, Wrapper, Plan, Box, Line, Note, NoteWrap, Position, Wrap } from './style';
+import { Container, Main, Title, Text, Wrapper, Plan, Box, Line, Note, NoteWrap, Wrap } from './style';
 import {Button} from '../Generic';
 import AbilityPage from '../6_HomePage_Ability';
 import QuestionsPage from '../8_HomePage_Questions';
@@ -21,7 +21,6 @@ const PricingMonthly = () => {
       <Main>
         <Title width='65%'> copy성공하는 CEO들의 <br></br>필수과정 • 도전 • 네트웍</Title>
         <Text margin='15px 0'>CEO.기업가들이 말하는 3D메버 후기를 확인 해 보세요</Text>
-        <Position>
           <Wrap>
             <Plan onClick={onNavigate}>후기 확인</Plan>
             <Plan borderBottom ='3px solid #000'>우리 계획</Plan>
@@ -108,7 +107,7 @@ const PricingMonthly = () => {
               <Button onClick={onClick} type='price'>1•10•100도전 시작</Button>     
             </Box>
           </Wrapper>
-        </Position>
+
         
       </Main>
       <AbilityPage/>

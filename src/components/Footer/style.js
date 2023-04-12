@@ -6,6 +6,7 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   border-top: 1px solid #EBECEF;
+  background: linear-gradient(to right bottom, #F5F9FC, #FFFFFF);
   padding: 40px 0;
 `;
 
@@ -65,7 +66,7 @@ const Contact = styled.div`
   padding: 0 40px;
 `;
 const Text = styled.div`
-  font-size: 1.2rem;
+  font-size: 1rem;
 `;
 const Box2 = styled.div`
   display: flex;

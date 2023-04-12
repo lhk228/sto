@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Progress, Radio, Space } from 'antd';
-import { Container, Main, Title, Text, Alert, Wrapper, Coution, FormWrap, } from './style';
+import { Container, Main, Title, Text, Alert, Wrapper, Coution, FormWrap, Note, } from './style';
 import {Button } from '../Generic';
 import { useNavigate } from 'react-router-dom';
+import { array } from '../Form_Step_5';
 const Step1 = () => {
 
   const [value, setValue] = useState();
   const onChange = (e) => {
-    console.log(e.target.value);
     setValue(e.target.value);
     setDisplayText('')
   };
@@ -15,11 +15,10 @@ const Step1 = () => {
   const [displayText, setDisplayText] = useState('');
   const onClick =()=> {
     if(value){
-      setValue('')
-      navigate('/form/step-2')
+      navigate('/form/step-2');
+      array.push(value);
     }else{
-      console.log('error');
-      setDisplayText('입력한 이메일 주소 확인해 주세요!');
+      setDisplayText('하나를 선택하십시오!');
     }
   }
   return (
@@ -29,6 +28,7 @@ const Step1 = () => {
         <Text>다음 중 당신의 사업은 어느 분야에 가깝습니까?</Text>
         <Alert>{displayText}</Alert>
         <Progress percent={25} showInfo={false} />
+        <Note>1 / 5</Note>
         <Wrapper>
           <FormWrap>
             <Radio.Group onChange={onChange} value={value}>

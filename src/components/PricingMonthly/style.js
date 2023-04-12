@@ -55,23 +55,12 @@ const Wrapper = styled.div`
     flex-direction: column-reverse;
   }
   `;
-const Position =styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 900px;
-  @media ${device.tablet} { 
-    height: 165rem;
-  }
-  @media ${device.mobile} { 
-    height: 2600px;
-  }
-`;
+
 const Plan = styled.p`
   text-align: center;
   font-weight: 900;
   font-size: 1rem;
+  margin-bottom: 2rem;
   padding: 10px 20px;
   cursor: pointer;
   border-bottom: ${({borderBottom})=>(borderBottom ? `${borderBottom}` : 'none')};
@@ -119,4 +108,4 @@ const Note = styled.p`
   font-size: 0.9375rem;
 `;
 
-export {Container, Main, Title, Text, Plan, Wrapper, Wrap, Box, Line, Note, NoteWrap, Position};
+export {Container, Main, Title, Text, Plan, Wrapper, Wrap, Box, Line, Note, NoteWrap};

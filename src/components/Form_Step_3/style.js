@@ -6,6 +6,8 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
+  height: 100vh;
 `;
 
 const Main = styled.div`
@@ -15,7 +17,7 @@ const Main = styled.div`
   box-shadow: 0px 10px 40px 0px rgba(29, 46, 59, 0.15);
   border-radius: 10px;
   padding: 40px 70px;
-  margin-top: 50px;
+  margin-bottom: 10rem;
   position: relative;
   @media ${device.mobile}{
     padding: 30px 20px;
@@ -63,18 +65,20 @@ const Alert =styled.p`
   font-size: 14px;
   text-align: center;
   position: absolute;
-  top: 12.5rem;
-  left: 10rem;
+  top: 13.8rem;
+  left: 14.5rem;
   @media ${device.tablet}{
-    top: 4.55rem;
-    left: 15rem;
+    top: 14rem;
   }
   @media ${device.mobile}{
-    left: 5.5rem;
+    top: 15rem;
+    left: 7.5rem;
   }`;
 
+const Note = styled.p`
+  text-align: center;
+`;
 
 
 
-
-export { Container, Alert, Main, Title, Text, FormWrap, Wrapper, Coution}
+export { Container, Alert, Main, Title, Text, FormWrap, Wrapper, Coution, Note}

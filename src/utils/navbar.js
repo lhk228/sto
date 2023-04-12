@@ -12,6 +12,7 @@ import Step1Page from "../pages/Form_Step_1";
 import Step2Page from "../pages/Form_Step_2";
 import Step3Page from "../pages/Form_Step_3";
 import Step4Page from "../pages/Form_Step_4";
+import Step5Page from "../pages/Form_Step_5";
 
 export const navbar = [
   {
@@ -113,6 +114,13 @@ export const navbar = [
     id: useId,
     element: <Step4Page/>,
     path: '/form/step-4',
+    private: false,
+    hidden: true
+  },
+  {
+    id: useId,
+    element: <Step5Page/>,
+    path: '/form/step-5',
     private: false,
     hidden: true
   },
