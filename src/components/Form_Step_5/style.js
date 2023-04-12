@@ -32,6 +32,15 @@ const Title = styled.div`
   letter-spacing: -0.06rem;
   margin-bottom: 30px;
 `;
+const Wraper = styled.div`
+  display: flex;
+  gap: 15px;
+  align-items: center;
+`
+const Text = styled.p`
+font-weight: 500;
+  font-size: 1.6rem;
+`;
 
 const Note = styled.p`
   text-align: center;
@@ -39,5 +48,4 @@ const Note = styled.p`
 `;
 
 
-
-export { Container, Main, Title, Note, }
+export { Container, Main, Title, Note, Wraper, Text}

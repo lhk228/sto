@@ -8,15 +8,11 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo1.jpg",
+      "src": "clone.jpg",
       "type": "image/jpg",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo1.jpg",
-      "type": "image/jpg",
-      "sizes": "512x512"
+      "sizes": "225x225"
     }
+
   ],
   "start_url": ".",
   "display": "standalone",

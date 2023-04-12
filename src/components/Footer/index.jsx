@@ -21,7 +21,7 @@ const Footer = () => {
     navigate('/pricing-home')
   }
   const onDirect4 =() => {
-    navigate('/success-page')
+    navigate('/success-home')
   }
   const onClick1 = () => {
     window.location.href = 'https://www.youtube.com/channel/UCXHaChrER0XYPrR43S7mx5A';
