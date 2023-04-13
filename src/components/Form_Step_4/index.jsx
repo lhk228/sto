@@ -4,6 +4,7 @@ import { Container, Main, Title, Text, Alert, Wrapper, Coution, FormWrap, Note, 
 import {Button } from '../Generic';
 import { useNavigate } from 'react-router-dom';
 import { array } from '../Form_Step_5';
+import { Bottom, Top } from '../Generic/transform';
 const Step4 = () => {
 
   const [value, setValue] = useState();
@@ -24,6 +25,8 @@ const Step4 = () => {
   }
   return (
     <Container>
+      <Top/>
+      <Bottom/>
       <Main>
         <Title>다음의 간단한 질문에 답하면, 어떤 퍼널이 당신의 사업에 가장 적합한지 찾아줍니다.</Title>
         <Text>현재 사업을 하면서 세일즈 퍼널을 사용합니까?</Text>

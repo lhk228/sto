@@ -4,6 +4,7 @@ import {Button} from '../Generic';
 import ReactPlayer from 'react-player';
 import Footer from '../Contacts';
 import { useNavigate } from 'react-router-dom';
+import { Bottom, Top } from '../Generic/transform';
 
 const FreeTrialStep1 = () => {
   const navigate = useNavigate()
@@ -15,6 +16,8 @@ const FreeTrialStep1 = () => {
   }
   return (
     <Container>
+      <Top/>
+      <Bottom/>
       <Main>
           <Tit>『CEO뉴스레터』 회원을 축하합니다!</Tit>
           <Text>약속대로, 최신 AI기술을 활용한 경제.경영.노하우 등<br /> 3분 주요뉴스를 매일 보내드립니다.</Text>

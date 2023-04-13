@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Main, Title, Note, Wraper, Text, } from './style';
 import { useNavigate } from 'react-router-dom';
+import { Bottom, Top } from '../Generic/transform';
 export const array = [];
 const Step5 = () => {
   
@@ -42,6 +43,8 @@ const Step5 = () => {
   }, [navigate]);
   return (
     <Container>
+      <Top/>
+      <Bottom/>
       <Main>
         <Title>성공</Title>
         <div className="skill-box">

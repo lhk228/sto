@@ -3,6 +3,7 @@ import { Container } from './style';
 import Footer from '../Footer'
 import PartnerSuccessPage from '../7_HomePage_Partners_Success';
 import QuestionsPage from '../8_HomePage_Awards';
+import { Bottom, Top } from '../Generic/transform';
 
 
 const SuccessHome = () => {
@@ -11,6 +12,8 @@ const SuccessHome = () => {
   }, []);
   return (
     <Container>
+      <Top/>
+      <Bottom/>
       <PartnerSuccessPage/>
       <QuestionsPage/>
       <Footer/>

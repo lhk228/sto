@@ -4,6 +4,7 @@ import {Button} from '../Generic';
 import {Index} from '../1_HomePage_Intro/style';
 import Pic from '../../assets/imgs/feature-1.avif'
 import { useNavigate } from 'react-router-dom';
+import { Top, Bottom } from '../Generic/transform';
 const Features = () => {
   const navigate = useNavigate();
   const onClick = ()=>{
@@ -11,6 +12,8 @@ const Features = () => {
   } 
   return (
     <Container>
+      <Top/>
+      <Bottom/>
       <Main>
           <Text>특징 / 세일즈 퍼널</Text>
           <Tit>온라인 방문자를 실제 구매  고객으로 전환합니다.</Tit>

@@ -4,6 +4,7 @@ import { Container, Main, Title, Text, Alert, Wrapper, Coution, FormWrap, Note, 
 import {Button } from '../Generic';
 import { useNavigate } from 'react-router-dom';
 import { array } from '../Form_Step_5';
+import { Bottom, Top } from '../Generic/transform';
 const Step2 = () => {
 
   const [value, setValue] = useState();
@@ -22,6 +23,8 @@ const Step2 = () => {
   }
   return (
     <Container>
+      <Top/>
+      <Bottom/>
       <Main>
         <Title>다음의 간단한 질문에 답하면, 어떤 퍼널이 당신의 사업에 가장 적합한지 찾아줍니다.</Title>
         <Text>클릭퍼널스에 대해 어느 퍼널로 알게 되었습니까?</Text>

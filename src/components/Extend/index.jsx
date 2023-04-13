@@ -4,6 +4,7 @@ import {Button} from '../Generic';
 import ReactPlayer from 'react-player';
 import Footer from '../Contacts';
 import { useNavigate } from 'react-router-dom';
+import { Bottom, Top } from '../Generic/transform';
 
 const Extend = () => {
   const navigate = useNavigate()
@@ -15,6 +16,8 @@ const Extend = () => {
   }
   return (
     <Container>
+      <Top/>
+      <Bottom/>
       <Main>
           <Tit>백만장자 CEO 마인드 + AI방법 비밀특강!</Tit>
           <Text>책10권 가치의 핵심노하우를 특강 2시간만에 익히기</Text>

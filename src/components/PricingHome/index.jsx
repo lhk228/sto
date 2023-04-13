@@ -6,6 +6,7 @@ import QuestionsPage from '../8_HomePage_Questions';
 import Footer from '../Footer';
 import { useNavigate } from 'react-router-dom';
 import { array } from '../Form_Step_5';
+import { Bottom, Top } from '../Generic/transform';
 const PricingHome = () => {
   const navigate = useNavigate();
   const onClick =()=>{
@@ -20,6 +21,8 @@ const PricingHome = () => {
   const [name] = useState(`${array[0]}`);
   return (
     <Container>
+      <Top/>
+      <Bottom/>
       <Main>
         <Title width='65%'> {name} CEO들의 <br></br>필수과정 • 도전 • 네트웍</Title>
         <Text margin='15px 0'>CEO.기업가들이 말하는 3D메버 후기를 확인 해 보세요</Text>

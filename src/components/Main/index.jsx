@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import { Checkbox } from 'antd';
 import Contact from '../Contacts'
+import { Bottom, Top } from '../Generic/transform';
 
 
 const MainP = () => {
@@ -18,13 +19,13 @@ const MainP = () => {
       body: JSON.stringify(data)
     })
       .then(response => response.json())
-      .then(result => {
-        if (result.ErrorCode === 0) {
-          alert('문의가 접수되었습니다.');
-        } else {
-          alert('시스템오류, 관리자에게 문의하십시오.');
-        }
-      })
+      // .then(result => {
+      //   if (result.ErrorCode === 0) {
+      //     alert('문의가 접수되었습니다.');
+      //   } else {
+      //     alert('시스템오류, 관리자에게 문의하십시오.');
+      //   }
+      // })
       .catch(error => {
         console.error(error);
       });
@@ -53,6 +54,7 @@ const MainP = () => {
     };
     if(data.Phone.length < 10){
       setDisplayTel('입력한 전화번호 확인해 주세요!');
+      console.log(typeof(data.Phone));
     }
 
   };
@@ -91,6 +93,8 @@ const MainP = () => {
 
   return (
     <Container>
+      <Top/>
+      <Bottom/>
       <Main>
           <Title>  CEO를 위한  『3분  뉴스』</Title>
           <Text>앞서가는 CEO를 위해! </Text>

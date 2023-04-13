@@ -8,11 +8,14 @@ import OpportunityPage from '../5_HomePage_Opportunity';
 import AbilityPage from '../6_HomePage_Ability';
 import PartnersPage from '../7_HomePage_Partners';
 import Footer from '../Footer'
+import { Bottom, Top } from '../Generic/transform';
 
 
 const StoryHome = () => {
   return (
     <Container>
+      <Top/>
+      <Bottom/>
       <Intro/>
       <VideoPage/>
       <EntrepreneursHomePage/>

@@ -1,15 +1,20 @@
-import React, {useEffect}from 'react';
+import React, {useEffect, useState}from 'react';
 import { Container, Main, Title, Text, Wrapper, Plan, Box, Line, Note, NoteWrap, Wrap } from './style';
 import {Button} from '../Generic';
 import AbilityPage from '../6_HomePage_Ability';
 import QuestionsPage from '../8_HomePage_Questions';
 import Footer from '../Footer';
 import { useNavigate } from 'react-router-dom';
+import { array } from '../Form_Step_5';
+import { Bottom, Top } from '../Generic/transform';
+
+
 const PricingMonthly = () => {
   const navigate = useNavigate();
   const onClick =()=>{
     navigate('/payment-form')
   }
+  const [name] = useState(`${array[0]}`);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -18,8 +23,10 @@ const PricingMonthly = () => {
   }
   return (
     <Container>
+      <Top/>
+      <Bottom/>
       <Main>
-        <Title width='65%'> copy성공하는 CEO들의 <br></br>필수과정 • 도전 • 네트웍</Title>
+        <Title width='65%'> {name} CEO들의 <br></br>필수과정 • 도전 • 네트웍</Title>
         <Text margin='15px 0'>CEO.기업가들이 말하는 3D메버 후기를 확인 해 보세요</Text>
           <Wrap>
             <Plan onClick={onNavigate}>후기 확인</Plan>
