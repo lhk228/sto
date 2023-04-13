@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Progress} from 'antd';
 import { Container, Main, Title, Note, Wraper, Text, } from './style';
-import {Button } from '../Generic';
 import { useNavigate } from 'react-router-dom';
 export const array = [];
 const Step5 = () => {
-console.log(Progress);
   
   const navigate = useNavigate()
-  const onClick =()=> {
-    navigate('/pricing-home');
-    console.log(array.splice(0));
-  }
+  
   const [isChecked, setIsChecked] = useState(false);
   const [isChecked2, setIsChecked2] = useState(false);
   const [isChecked3, setIsChecked3] = useState(false);
@@ -33,6 +27,9 @@ console.log(Progress);
     const timer4 = setTimeout(() => {
       setIsChecked4(true);
     }, 4000);
+    const timer5 = setTimeout(()=>{
+      navigate('/pricing-home')
+    }, 4500)
 
 
     return () => {
@@ -40,8 +37,9 @@ console.log(Progress);
       clearTimeout(timer2);
       clearTimeout(timer3);
       clearTimeout(timer4);
+      clearTimeout(timer5);
     };
-  }, []);
+  }, [navigate]);
   return (
     <Container>
       <Main>
@@ -111,7 +109,6 @@ console.log(Progress);
 
         <Title>완성되었다!</Title>
           
-          <Button onClick={onClick} type={'step'}>결제 페이지로 가기</Button>
       </Main>
     </Container>
   )
