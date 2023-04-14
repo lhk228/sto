@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Main, Title, Note, Wraper, Text, } from './style';
 import { useNavigate } from 'react-router-dom';
-import { Bottom, Top } from '../Generic/transform';
+import { Bottom, Top, TopClose, BottomClose } from '../Generic/transform';
 export const array = [];
 const Step5 = () => {
   
@@ -11,6 +11,7 @@ const Step5 = () => {
   const [isChecked2, setIsChecked2] = useState(false);
   const [isChecked3, setIsChecked3] = useState(false);
   const [isChecked4, setIsChecked4] = useState(false);
+  const [close, setClose] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -30,7 +31,10 @@ const Step5 = () => {
     }, 4000);
     const timer5 = setTimeout(()=>{
       navigate('/pricing-home')
-    }, 4500)
+    }, 5350);
+    const timer6 = setTimeout(()=>{
+      setClose(true)
+    }, 4300)
 
 
     return () => {
@@ -39,12 +43,16 @@ const Step5 = () => {
       clearTimeout(timer3);
       clearTimeout(timer4);
       clearTimeout(timer5);
+      clearTimeout(timer6);
     };
   }, [navigate]);
+  
   return (
     <Container>
       <Top/>
       <Bottom/>
+      { close && <TopClose/> }
+      { close && <BottomClose/> }
       <Main>
         <Title>성공</Title>
         <div className="skill-box">

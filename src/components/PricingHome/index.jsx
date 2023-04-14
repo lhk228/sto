@@ -6,27 +6,33 @@ import QuestionsPage from '../8_HomePage_Questions';
 import Footer from '../Footer';
 import { useNavigate } from 'react-router-dom';
 import { array } from '../Form_Step_5';
-import { Bottom, Top } from '../Generic/transform';
+import { Bottom, BottomClose, Top, TopClose } from '../Generic/transform';
+
 const PricingHome = () => {
   const navigate = useNavigate();
   const onClick =()=>{
-    navigate('/payment-form')
+    setTimeout(()=>{navigate('/payment-form')}, 850)
+      setClose(true)
   }
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const [close, setClose] = useState(false);
   const onNavigate = () =>{
-    navigate('/pricing-home/monthly');
+      setTimeout(()=>{navigate('/pricing-home/monthly')}, 850)
+      setClose(true)
   }
   const [name] = useState(`${array[0]}`);
+
   return (
     <Container>
       <Top/>
       <Bottom/>
+      { close && <TopClose/> }
+      { close && <BottomClose/> }
       <Main>
         <Title width='65%'> {name} CEO들의 <br></br>필수과정 • 도전 • 네트웍</Title>
         <Text margin='15px 0'>CEO.기업가들이 말하는 3D메버 후기를 확인 해 보세요</Text>
-        
           <Wrap>
             <Plan borderBottom ='3px solid #000'>후기 확인</Plan>
             <Plan onClick={onNavigate}>우리 계획</Plan>
@@ -34,7 +40,7 @@ const PricingHome = () => {
           <Wrapper>
             <Box>
               <Title fontSize='34px'>온라인 CEO과정</Title>
-              <Text fontSize ='14px'>2,500,000원</Text>
+              <Text fontSize ='18px'>2,500,000원</Text>
               <Line/>
               <Title fontWeight = '700' fontSize='32px'>250,000원</Title>
               <Text margin='10px 0' fontSize='13px'>10주 <b>스터디 (225만원 절약)</b></Text>
@@ -60,7 +66,7 @@ const PricingHome = () => {
             </Box>
             <Box>
               <Title fontSize='34px'>오프라인CEO과정</Title>
-              <Text fontSize ='14px'>10,000,000원</Text>
+              <Text fontSize ='18px'>10,000,000원</Text>
               <Line/>
               <Title fontWeight = '700' fontSize='32px'>2,500,000원</Title>
               <Text margin='10px 0' fontSize='13px'>10주 <b>스터디 (750만원 절약)</b></Text>
@@ -86,7 +92,7 @@ const PricingHome = () => {
             </Box>
             <Box backGround = 'rgb(21, 30, 82)'>
               <Title color='#FFF' fontSize='34px'>1•10•100도전</Title>
-              <Text color='#FFF' fontSize ='14px'>발생매출의 20~30%</Text>
+              <Text color='#FFF' fontSize ='18px'>발생매출의 20~30%</Text>
               <Line/>
               <Title color='var(--color-6Z-dzM8-7)' fontWeight = '700' fontSize='32px'>실비+매출의 10%</Title>
               <Text color='#FFF' margin='10px 0' fontSize='13px'>1년단위 <b>실행 (매출.지분.협업)</b></Text>

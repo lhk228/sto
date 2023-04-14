@@ -111,8 +111,11 @@ const Note = styled.p`
   width: 85%;
   margin-bottom: 50px;
 `;
+const Img = styled.img`
+width: 100%;
+height: 100%;
+`
 
 
-
-export {Container,  Down, Main, Title, 
+export {Container,  Down, Main, Title, Img,
         SupTitle, VideoContainer, VideoBox, VideoWrap, Name, Position, Note}

@@ -1,15 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Container, Main, Title, Tit, Text, VideoBox, Box, TitleWrap, BoxWrap} from './style';
 import {Button} from '../Generic';
 import ReactPlayer from 'react-player';
 import Footer from '../Contacts';
 import { useNavigate } from 'react-router-dom';
-import { Bottom, Top } from '../Generic/transform';
+import { Bottom, BottomClose, Top, TopClose } from '../Generic/transform';
 
 const Extend = () => {
   const navigate = useNavigate()
+  const [close, setClose] = useState(false);
   const onClick = () => {
-    navigate('/success-home');
+    setTimeout(()=>{navigate('/success-home')}, 850)
+      setClose(true)
   }
   const onClick2 = () => {
     navigate('/story-home');
@@ -18,6 +20,8 @@ const Extend = () => {
     <Container>
       <Top/>
       <Bottom/>
+      { close && <TopClose/> }
+      { close && <BottomClose/> }
       <Main>
           <Tit>CEO들이 공개하지 말라는, 바로 그 특강!</Tit>
           <Text>책 수십권의 가치를 단 몇 만원에 훔쳐가기!!</Text>

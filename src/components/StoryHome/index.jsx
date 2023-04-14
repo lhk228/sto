@@ -8,14 +8,23 @@ import OpportunityPage from '../5_HomePage_Opportunity';
 import AbilityPage from '../6_HomePage_Ability';
 import PartnersPage from '../7_HomePage_Partners';
 import Footer from '../Footer'
-import { Bottom, Top } from '../Generic/transform';
-
+// import {close} from './function'
+// import { useNavigate } from 'react-router-dom';
+import { FirstBottom, FirstTop } from '../Generic/transform';
 
 const StoryHome = () => {
+  // const navigate = useNavigate();
+  // const [close, setClose] = useState(false)
+  // const onClick1 = () => {
+  //   setTimeout(()=>{navigate('/form/step-2')}, 850)
+  //   setClose(true) 
+  // }
   return (
     <Container>
-      <Top/>
-      <Bottom/>
+      <FirstTop/>
+      <FirstBottom/>
+      {/* { close && <TopClose/> }
+      { close && <BottomClose/> } */}
       <Intro/>
       <VideoPage/>
       <EntrepreneursHomePage/>

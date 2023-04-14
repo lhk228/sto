@@ -110,4 +110,9 @@ const BoxWrap = styled.div`
   };
 `;
 
-export {Container, Main, Title, Text, VideoBox, Box, Tit, TitleWrap, BoxWrap};
+const Img = styled.img`
+width: auto;
+height: auto;
+`
+
+export {Container, Img, Main, Title, Text, VideoBox, Box, Tit, TitleWrap, BoxWrap};
