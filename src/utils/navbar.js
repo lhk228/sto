@@ -13,7 +13,7 @@ import Step2Page from "../pages/Form_Step_2";
 import Step3Page from "../pages/Form_Step_3";
 import Step4Page from "../pages/Form_Step_4";
 import Step5Page from "../pages/Form_Step_5";
-
+import VideoPagePage from "../pages/VideoPage";
 export const navbar = [
   {
     id: useId, 
@@ -67,6 +67,14 @@ export const navbar = [
     id: useId,
     element: <PricingMonthlyPage/>,
     path: '/pricing-home/monthly',
+    private: false,
+    hidden: true
+  },
+
+  {
+    id: useId,
+    element: <VideoPagePage/>,
+    path: '/video-page',
     private: false,
     hidden: true
   },

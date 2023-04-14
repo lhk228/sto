@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import ReactPlayer from 'react-player';
 import {  Container, Down, Main, Name, Note, Position, SupTitle, Title, VideoBox, VideoContainer, VideoWrap, } from './style';
-
+import SpeVideo from '../Generic/video';
 import { Button } from '../Generic';
 import { Index } from '../1_HomePage_Intro/style';
 import { useNavigate } from 'react-router-dom';
@@ -13,9 +13,11 @@ const PartnersPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
+
+
   return (
     <Container>
-      
       <Down>
         <Main>
           <Title>성공한 CEO들이 절대! 공개하지 말라는..<br></br> 『AI·3D 자동수익화』 비밀</Title>
@@ -23,28 +25,29 @@ const PartnersPage = () => {
           <VideoContainer>
             <VideoBox>
               <VideoWrap>
-              <ReactPlayer width={'100%'} height={'100%'} url={'https://youtu.be/mWSVB7FMmoE'}></ReactPlayer>
+                <ReactPlayer controls width={'100%'} height={'100%'} url={SpeVideo[1].url}></ReactPlayer>
               </VideoWrap>
+              
               <Name>[무료]수강생들의 진짜후기</Name>
               <Position>후기 : OOO,OOO,OOO CEO</Position>
             </VideoBox>
             <VideoBox>
               <VideoWrap>
-              <ReactPlayer width={'100%'} height={'100%'} url={'https://youtu.be/mWSVB7FMmoE'}></ReactPlayer>
+              <ReactPlayer controls width={'100%'} height={'100%'} url={'https://youtu.be/mWSVB7FMmoE'}></ReactPlayer>
               </VideoWrap>
               <Name>[무료]수강생들의 리얼후기</Name>
               <Position>후기 : OOO,OOO,OOO CEO</Position>
             </VideoBox>
             <VideoBox>
               <VideoWrap>
-              <ReactPlayer width={'100%'} height={'100%'} url={'https://youtu.be/mWSVB7FMmoE'}></ReactPlayer>
+              <ReactPlayer width={'100%'} height={'100%'} url={SpeVideo[1].url}></ReactPlayer>
               </VideoWrap>
               <Name>[무료1강] 비즈니스 모델별 사례</Name>
               <Position>강사 : 이상민 CEO</Position>
             </VideoBox>
             <VideoBox>
-              <VideoWrap>
-              <ReactPlayer width={'100%'} height={'100%'} url={'https://youtu.be/mWSVB7FMmoE'}></ReactPlayer>
+              <VideoWrap onClick={onClick} id= {SpeVideo[4].url}>
+              {/* <ReactPlayer width={'100%'} height={'100%'} url={'https://youtu.be/mWSVB7FMmoE'}></ReactPlayer> */}
               </VideoWrap>
               <Name>[유료2강] 비즈니스 구조·철학·특허</Name>
               <Position>강사 : 유철현 변리사, 이상민 CEO</Position>

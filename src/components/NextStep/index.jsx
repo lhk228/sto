@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Main, Title, Tit, Text, VideoBox, Box, TitleWrap, BoxWrap, Line, Line1} from './style';
+import { Container, Main, Title, Tit, Text, VideoBox, Box, TitleWrap, BoxWrap} from './style';
 import {Button} from '../Generic';
 import ReactPlayer from 'react-player';
 import Footer from '../Contacts';
@@ -20,28 +20,28 @@ const FreeTrialStep1 = () => {
       <Bottom/>
       <Main>
           <Tit>『CEO뉴스레터』 회원을 축하합니다!</Tit>
-          <Text>약속대로, 최신 AI기술을 활용한 경제.경영.노하우 등<br /> 3분 주요뉴스를 매일 보내드립니다.</Text>
+          <Text>약속대로, 최신 AI기술을 활용한 경제·경영·노하우 등<br /> 3분 주요뉴스를 매일 영상으로 보내드립니다.</Text>
           
-          <Title>당일만 드리는 특별한 제안! </Title>
+          <Title>회원 축하기념, 당일만 드리는 특별 혜택! </Title>
           <BoxWrap>
             <TitleWrap>
-              <Title>백만장자 CEO 마인드+AI방법 비밀특강!</Title>
+              <Title>30억 빚을 1년만에 300억 만든, CEO비밀!</Title>
               <Box>
                 <VideoBox>
                   <ReactPlayer width={'100%'} height={'100%'} url={'https://youtu.be/tkOcbaGJshk'}></ReactPlayer>
                 </VideoBox>
-                <Button onClick={onClick} type={'full'}>책10권 이상의 가치를, 비밀특강 10만 1만원에 바로가기</Button>
-                <Line1/>
+                <Button onClick={onClick} type={'full'}>책10권 이상의 노하우 비밀특강!  『 1만원 』에 바로보기</Button>
+                
               </Box>
             </TitleWrap>
             <TitleWrap>
-              <Title>CEO 비즈니스, AI·3D 자동 수익화의 비밀!</Title>
+              <Title>AI영상 컨텐츠 나도 만들어보기!</Title>
               <Box>
                 <VideoBox>
                   <ReactPlayer width={'100%'} height={'100%'} url={'https://youtu.be/tkOcbaGJshk'}></ReactPlayer>
                 </VideoBox>
-                <Button onClick={onClick2} type={'full'}> 1강~10강 CEO 자동수익화 비밀, 250만 25만원에 바로가기</Button>
-                <Line/>
+                <Button onClick={onClick2} type={'full'}> 전문분야를 "스크립트"만 입력시, 1분당 『 1만원 』에 만들기</Button>
+              
               </Box>
             </TitleWrap>
           </BoxWrap>

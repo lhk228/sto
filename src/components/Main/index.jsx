@@ -38,7 +38,7 @@ const MainP = () => {
 
   const onSubmit = (event) => {
     if (data.Email.includes('@', '.') &&
-        data.Phone.length> 10 &&
+        (data.Phone.length> 10 && /[a-zA-Z]/.test(data.Phone) === false) &&
         isChecked) {
       navigate('/next-step');
       event.preventDefault();
@@ -52,9 +52,8 @@ const MainP = () => {
     if(!data.Email.includes('@', '.')){
       setDisplayEmail('입력한 이메일 주소 확인해 주세요!');
     };
-    if(data.Phone.length < 10){
+    if(data.Phone.length < 10 || /[a-zA-Z]/.test(data.Phone) === true ){
       setDisplayTel('입력한 전화번호 확인해 주세요!');
-      console.log(typeof(data.Phone));
     }
 
   };
@@ -105,7 +104,7 @@ const MainP = () => {
             <ReactPlayer  ref={playerRef} playing={true} width={'100%'} height={'100%'} url={'https://youtu.be/tkOcbaGJshk'}></ReactPlayer>
           </VideoBox>
           <InputBox>
-            <InputTitle>뉴스 받을 '핸드폰 번호' 입력란</InputTitle>
+            <InputTitle>뉴스 받을 '메일 핸드폰 번호' 입력란</InputTitle>
             <Wrapper>
                 <InputWrap>
                 
@@ -115,7 +114,7 @@ const MainP = () => {
                   value={data.Email} 
                   onChange={handleChange}
                   onFocus={FocusEmail}
-                  placeholder='이메일 (초기 입력 메일과 동일)' 
+                  placeholder='이메일 (예)sm@mever.me' 
                 />
                 <AlertEmail>{displayEmail}</AlertEmail>
                 <Input
