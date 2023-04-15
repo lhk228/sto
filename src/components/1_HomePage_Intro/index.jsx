@@ -11,15 +11,15 @@ const Intro = () => {
   return (
     <Container>
       <Main>
-        <Suptitle>CEO님, 월세같이 매월 꾸준한 수익을 얻고싶으세요?</Suptitle>
-        <Title>3D홈페이지.AI마케팅.</Title>
-        <Text>사람들을 3D홈페이지로 유입하여,<br /> AI마케팅으로 매출까지 전환시키는 것이 우리의 기술입니다.</Text>
-        <Button onClick={onClick} type={'large'}>처음 오신 CEO를 위해, 심플 견적</Button>
-        <Index>계약 없음 • 언제든지 해지 가능</Index>
+        <Suptitle>CEO님! 매월 받는 월세같이, 온라인 수익을 만들어 본적 있으세요?</Suptitle>
+        <Title>3D홈페이지 + AI마케팅</Title>
+        <Text>고객들을 3D홈페이지로 유입하여,<br/> AI마케팅으로 매출전환 시키는 것. 이것이 『메버의 특허기술』입니다.</Text>
+        <Button onClick={onClick} type={'large'}>처음 오신 CEO를 위한, 서비스 견적</Button>
+        <Index>의무 계약기간 없음 • 언제든지 해지 가능</Index>
         <Wrapper>
           <Section>
             <IconCheck src = {iconCheck}/>
-            <SectionText>최신 AI 3D기술을 사용하고 싶지만</SectionText>
+            <SectionText>최신 AI • 3D기술을 사용하고 싶지만</SectionText>
           </Section>
           <Section>
             <IconCheck src = {iconCheck}/>
@@ -27,7 +27,7 @@ const Intro = () => {
           </Section>
           <Section>
             <IconCheck src = {iconCheck}/>
-            <SectionText>다양한 CEO 비즈니스에 1:1맞춤 제공됩니다</SectionText>
+            <SectionText>산업별 • 업종별 비즈니스에 1:1맞춤 제공됩니다</SectionText>
           </Section>
         </Wrapper>
       </Main>
