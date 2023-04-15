@@ -112,38 +112,38 @@ const BoxWrap = styled.div`
   };
 `;
 
-const Line = styled.div`
-  background: linear-gradient(to right , #FFFFFF, rgb(255, 0, 0));
-  width: 37px;
-  height: 2px;
-  position: absolute;
-  top: 315px;
-  left: 320px;
-  @media ${device.tablet} { 
-    left: 400px;
-    top: 385px;
-  }
-  @media ${device.mobile} { 
-    top: 230px;
-    left: 305px;
-  }
-`;
+// const Line = styled.div`
+//   background: linear-gradient(to right , #FFFFFF, rgb(255, 0, 0));
+//   width: 37px;
+//   height: 2px;
+//   position: absolute;
+//   top: 315px;
+//   left: 320px;
+//   @media ${device.tablet} { 
+//     left: 400px;
+//     top: 385px;
+//   }
+//   @media ${device.mobile} { 
+//     top: 230px;
+//     left: 305px;
+//   }
+// `;
 
-const Line1 = styled.div`
-  background: linear-gradient(to right , #FFFFFF, rgb(255, 0, 0));
-  width: 38px;
-  height: 2px;
-  position: absolute;
-  top: 315px;
-  left: 323px;
-  @media ${device.tablet} { 
-    left: 405px;
-    top: 385px;
-  }
-  @media ${device.mobile} { 
-    top: 230px;
-    left: 300px;
-  }
-`;
+// const Line1 = styled.div`
+//   background: linear-gradient(to right , #FFFFFF, rgb(255, 0, 0));
+//   width: 38px;
+//   height: 2px;
+//   position: absolute;
+//   top: 315px;
+//   left: 323px;
+//   @media ${device.tablet} { 
+//     left: 405px;
+//     top: 385px;
+//   }
+//   @media ${device.mobile} { 
+//     top: 230px;
+//     left: 300px;
+//   }
+// `;
 
-export {Container, Main, Title, Text, VideoBox, Box, Tit, TitleWrap, BoxWrap, Line1, Line};
+export {Container, Main, Title, Text, VideoBox, Box, Tit, TitleWrap, BoxWrap};

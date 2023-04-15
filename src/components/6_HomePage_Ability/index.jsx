@@ -6,11 +6,10 @@ import { Button } from '../Generic';
 import { Index } from '../1_HomePage_Intro/style';
 import Logo from '../../assets/imgs/merisa.jpg'
 import { useNavigate } from 'react-router-dom';
-
 const AbilityPage = () => {
   const navigate = useNavigate()
   const onClick = () => {
-    navigate('/pricing-home');
+    navigate('/form/step-1');
   }
   const onBox = () => {
     navigate('/features')
@@ -18,7 +17,6 @@ const AbilityPage = () => {
   return (
     <Container>
       <Main>
-        
         <Title>ClickFunnels는 온라인 성공에 필요한 모든 것을 제공합니다.</Title>
         <QuesText>고객이 귀사를 찾도록 유도하는 플러스 퍼널!</QuesText>
         <Wrapper>

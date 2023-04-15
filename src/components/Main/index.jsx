@@ -5,10 +5,10 @@ import { useNavigate } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import { Checkbox } from 'antd';
 import Contact from '../Contacts'
-import { Bottom, Top } from '../Generic/transform';
-
+import { FirstBottom, BottomClose, FirstTop, TopClose } from '../Generic/transform';
 
 const MainP = () => {
+  
   const [data, setData] = useState({
     Email: '',
     Phone: '',
@@ -35,12 +35,14 @@ const MainP = () => {
   const [displayEmail, setDisplayEmail] = useState('');
   const [displayTel, setDisplayTel] = useState('');
   const [displayCheck, setDisplayCheck] = useState('');
-
+  const [close, setClose] = useState(false)
   const onSubmit = (event) => {
     if (data.Email.includes('@', '.') &&
         (data.Phone.length> 10 && /[a-zA-Z]/.test(data.Phone) === false) &&
         isChecked) {
-      navigate('/next-step');
+          setTimeout(()=>{navigate('/next-step')}, 850)
+          setClose(true)
+
       event.preventDefault();
     api_post();
     
@@ -89,11 +91,14 @@ const MainP = () => {
     const FocusTel = () => {
       setDisplayTel('')
     }
+  
 
   return (
     <Container>
-      <Top/>
-      <Bottom/>
+      <FirstTop/>
+      <FirstBottom/>
+      { close && <TopClose/> }
+      { close && <BottomClose/> }
       <Main>
           <Title>  CEO를 위한  『3분  뉴스』</Title>
           <Text>앞서가는 CEO를 위해! </Text>

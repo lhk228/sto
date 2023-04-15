@@ -88,7 +88,7 @@ const Line = styled.div`
   width: 120px;
   height: 2px;
   position: absolute;
-  top: 100px;
+  top: 103px;
   left: 120px;
   @media ${device.tablet} { 
     left: 260px;

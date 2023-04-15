@@ -4,7 +4,7 @@ import { Container, Main, Title, Text, Alert, Wrapper, Coution, FormWrap, Note, 
 import {Button } from '../Generic';
 import { useNavigate } from 'react-router-dom';
 import { array } from '../Form_Step_5';
-import { Bottom, Top } from '../Generic/transform';
+import { Bottom, Top, BottomClose, TopClose } from '../Generic/transform';
 const Step4 = () => {
 
   const [value, setValue] = useState();
@@ -14,11 +14,12 @@ const Step4 = () => {
   };
   const navigate = useNavigate()
   const [displayText, setDisplayText] = useState('');
+  const [close, setClose] = useState(false);
   const onClick =()=> {
     if(value){
-      navigate('/form/step-5');
+      setTimeout(()=>{navigate('/form/step-5')}, 850)
+      setClose(true)
       array.push(value);
-      console.log(array);
     }else{
       setDisplayText('하나를 선택하십시오!');
     }
@@ -27,6 +28,8 @@ const Step4 = () => {
     <Container>
       <Top/>
       <Bottom/>
+      { close && <TopClose/> }
+      { close && <BottomClose/> }
       <Main>
         <Title>다음의 간단한 질문에 답하면, 어떤 퍼널이 당신의 사업에 가장 적합한지 찾아줍니다.</Title>
         <Text>현재 사업을 하면서 세일즈 퍼널을 사용합니까?</Text>

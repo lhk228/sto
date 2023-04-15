@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 const WhyFourthPage = () => {
   const navigate = useNavigate()
   const onClick =()=>{
-    navigate('/pricing-home')
+    navigate('/form/step-1')
   }
   return (
     <Container>

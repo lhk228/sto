@@ -1,23 +1,28 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Container, Main, Title, Tit, Text, VideoBox, Box, TitleWrap, BoxWrap} from './style';
 import {Button} from '../Generic';
 import ReactPlayer from 'react-player';
 import Footer from '../Contacts';
 import { useNavigate } from 'react-router-dom';
-import { Bottom, Top } from '../Generic/transform';
+import { Bottom, BottomClose, Top, TopClose } from '../Generic/transform';
 
 const FreeTrialStep1 = () => {
   const navigate = useNavigate()
   const onClick = () => {
-    navigate('/extend');
+    setTimeout(()=>{navigate('/extend')}, 850)
+      setClose(true)
   }
+  const [close, setClose] = useState(false);
   const onClick2 = () => {
-    navigate('/success-home');
+    setTimeout(()=>{navigate('/success-home')}, 850)
+      setClose(true)
   }
   return (
     <Container>
       <Top/>
       <Bottom/>
+      { close && <TopClose/> }
+      { close && <BottomClose/> }
       <Main>
           <Tit>『CEO뉴스레터』 회원을 축하합니다!</Tit>
           <Text>약속대로, 최신 AI기술을 활용한 경제·경영·노하우 등<br /> 3분 주요뉴스를 매일 영상으로 보내드립니다.</Text>

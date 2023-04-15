@@ -4,7 +4,7 @@ import { Container, Main, Title, Text, Alert, Wrapper, Coution, FormWrap, Note, 
 import {Button } from '../Generic';
 import { useNavigate } from 'react-router-dom';
 import { array } from '../Form_Step_5';
-import { Bottom, Top } from '../Generic/transform';
+import { BottomClose, FirstBottom, FirstTop, TopClose } from '../Generic/transform';
 const Step1 = () => {
 
   const [value, setValue] = useState();
@@ -12,11 +12,13 @@ const Step1 = () => {
     setValue(e.target.value);
     setDisplayText('')
   };
+  const [close, setClose] = useState(false)
   const navigate = useNavigate()
   const [displayText, setDisplayText] = useState('');
   const onClick =()=> {
     if(value){
-      navigate('/form/step-2');
+      setTimeout(()=>{navigate('/form/step-2')}, 850)
+      setClose(true)
       array.push(value);
     }else{
       setDisplayText('하나를 선택하십시오!');
@@ -24,8 +26,13 @@ const Step1 = () => {
   }
   return (
     <Container>
-      <Top/>
-      <Bottom/>
+      
+      <FirstTop/>
+      <FirstBottom/>
+      
+      { close && <TopClose/> }
+      { close && <BottomClose/> }
+
       <Main>
         <Title>다음의 간단한 질문에 답하면, 어떤 퍼널이 당신의 사업에 가장 적합한지 찾아줍니다.</Title>
         <Text>다음 중 당신의 사업은 어느 분야에 가깝습니까?</Text>
