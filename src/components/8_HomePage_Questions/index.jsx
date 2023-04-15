@@ -23,7 +23,7 @@ const text5 = `
 `;
 
 const text6 = `
-  text6
+  hi
 `;
 
 const text7 = `
