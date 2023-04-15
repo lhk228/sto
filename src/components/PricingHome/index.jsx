@@ -23,9 +23,6 @@ const PricingHome = () => {
       setClose(true)
   }
   const [name] = useState(`${array[0]}`);
-  const onHover = () =>{
-    console.log('hi');
-  }
   return (
     <Container>
       <Top/>
