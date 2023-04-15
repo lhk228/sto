@@ -3,7 +3,7 @@ import {  Container,  Main,  Title,} from './style';
 import { Collapse } from 'antd';
 const { Panel } = Collapse;
 const text1 = `
-  text1
+  111111111111111111111111111111111S
 `;
 
 const text2 = `
