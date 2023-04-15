@@ -33,16 +33,16 @@ const PricingHome = () => {
       { close && <TopClose/> }
       { close && <BottomClose/> }
       <Main>
-        <Title width='65%'> {name === 'undefined' ? '':`${name}`} CEO들의 <br></br>필수과정 • 도전 • 네트웍</Title>
-        <Text margin='15px 0'>CEO.기업가들이 말하는 3D메버 후기를 확인 해 보세요</Text>
+        <Title width='65%'> {name === 'undefined' ? '':`${name}`} CEO들의 <br/>AI 3D과정 • 도전 • 네트웍</Title>
+        <Text margin='15px 0'>CEO들이 말하는 메버 후기를 꼼꼼히 확인 해 보시고 결정하세요</Text>
           <Wrap>
-            <Plan borderBottom ='3px solid #000'>후기 확인</Plan>
-            <Plan onClick={onNavigate}>우리 계획</Plan>
+            <Plan borderBottom ='3px solid #000'>교육과정 • 챌린지 신청</Plan>
+            <Plan onClick={onNavigate}>AI • 3D • STO 솔루션</Plan>
           </Wrap>
           <Wrapper>
-            <Box onFocus={onHover}>
+            <Box>
               <Title fontSize='34px'>온라인 CEO과정</Title>
-              <Text fontSize ='18px'>2,500,000원</Text>
+              <Text fontSize ='14px'>2,500,000원</Text>
               <Line/>
               <Title fontWeight = '700' fontSize='32px'>250,000원</Title>
               <Text margin='10px 0' fontSize='13px'>10주 <b>스터디 (225만원 절약)</b></Text>
@@ -68,7 +68,7 @@ const PricingHome = () => {
             </Box>
             <Box>
               <Title fontSize='34px'>오프라인CEO과정</Title>
-              <Text fontSize ='18px'>10,000,000원</Text>
+              <Text fontSize ='14px'>10,000,000원</Text>
               <Line/>
               <Title fontWeight = '700' fontSize='32px'>2,500,000원</Title>
               <Text margin='10px 0' fontSize='13px'>10주 <b>스터디 (750만원 절약)</b></Text>
@@ -94,7 +94,7 @@ const PricingHome = () => {
             </Box>
             <Box backGround = 'rgb(21, 30, 82)'>
               <Title color='#FFF' fontSize='34px'>1•10•100도전</Title>
-              <Text color='#FFF' fontSize ='18px'>발생매출의 20~30%</Text>
+              <Text color='#FFF' fontSize ='14px'>발생매출의 20~30%</Text>
               <Line/>
               <Title color='var(--color-6Z-dzM8-7)' fontWeight = '700' fontSize='32px'>실비+매출의 10%</Title>
               <Text color='#FFF' margin='10px 0' fontSize='13px'>1년단위 <b>실행 (매출.지분.협업)</b></Text>
@@ -121,14 +121,11 @@ const PricingHome = () => {
               <Button onClick={onClick} type='price'>1•10•100도전 시작</Button>     
             </Box>
           </Wrapper>
-        
-        
       </Main>
       <AbilityPage/>
       <QuestionsPage/>
       <Footer/>
     </Container>
-
   )
 }
 
