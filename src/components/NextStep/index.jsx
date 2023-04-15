@@ -39,12 +39,12 @@ const FreeTrialStep1 = () => {
               </Box>
             </TitleWrap>
             <TitleWrap>
-              <Title>AI영상 컨텐츠 나도 만들어보기!</Title>
+              <Title>AI 영상 컨텐츠, 나도 쉽게 만들어보기!</Title>
               <Box>
                 <VideoBox>
                   <ReactPlayer width={'100%'} height={'100%'} url={'https://youtu.be/tkOcbaGJshk'}></ReactPlayer>
                 </VideoBox>
-                <Button onClick={onClick2} type={'full'}> 전문분야를 "스크립트"만 입력시, 1분당 『 1만원 』에 만들기</Button>
+                <Button onClick={onClick2} type={'full'}> 원하는 영상 "스크립트"만 입력시, 1분당 『 1만원 』에 만들기</Button>
               
               </Box>
             </TitleWrap>
