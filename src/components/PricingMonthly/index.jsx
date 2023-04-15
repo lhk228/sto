@@ -12,7 +12,7 @@ const PricingMonthly = () => {
   const navigate = useNavigate();
   const [close, setClose] = useState(false);
   const onClick =()=>{
-    setTimeout(()=>{navigate('/payment-form')}, 850)
+    setTimeout(()=>{navigate('/payment-form')}, 420)
     setClose(true)
   }
   const [name] = useState(`${array[0]}`);
@@ -20,7 +20,7 @@ const PricingMonthly = () => {
     window.scrollTo(0, 0);
   }, []);
   const onNavigate = () =>{
-    setTimeout(()=>{navigate('/pricing-home')}, 850)
+    setTimeout(()=>{navigate('/pricing-home')}, 420)
     setClose(true)
   }
   return (

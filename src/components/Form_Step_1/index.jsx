@@ -17,7 +17,7 @@ const Step1 = () => {
   const [displayText, setDisplayText] = useState('');
   const onClick =()=> {
     if(value){
-      setTimeout(()=>{navigate('/form/step-2')}, 850)
+      setTimeout(()=>{navigate('/form/step-2')}, 420)
       setClose(true)
       array.push(value);
     }else{

@@ -5,9 +5,24 @@ import { useNavigate } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import { Checkbox } from 'antd';
 import Contact from '../Contacts'
+// import axios from 'axios';
 import { FirstBottom, BottomClose, FirstTop, TopClose } from '../Generic/transform';
 
 const MainP = () => {
+  // const [playlist, setPlaylist] = useState([]);
+
+  // useEffect(() => {
+  //   axios
+  //     .get(
+  //       "https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId={UCXHaChrER0XYPrR43S7mx5A}&maxResults=50&key={AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8}"
+  //     )
+  //     .then((res) => {
+  //       console.log(res);
+  //       setPlaylist(res.data.items);
+  //     })
+  //     .catch(() => {});
+  // }, []);
+  // console.log(playlist);
   
   const [data, setData] = useState({
     Email: '',
@@ -40,7 +55,7 @@ const MainP = () => {
     if (data.Email.includes('@', '.') &&
         (data.Phone.length> 10 && /[a-zA-Z]/.test(data.Phone) === false) &&
         isChecked) {
-          setTimeout(()=>{navigate('/next-step')}, 850)
+          setTimeout(()=>{navigate('/next-step')}, 420)
           setClose(true)
 
       event.preventDefault();

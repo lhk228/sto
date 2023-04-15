@@ -11,7 +11,7 @@ import { Bottom, BottomClose, Top, TopClose } from '../Generic/transform';
 const PricingHome = () => {
   const navigate = useNavigate();
   const onClick =()=>{
-    setTimeout(()=>{navigate('/payment-form')}, 850)
+    setTimeout(()=>{navigate('/payment-form')}, 420)
       setClose(true)
   }
   useEffect(() => {
@@ -19,11 +19,13 @@ const PricingHome = () => {
   }, []);
   const [close, setClose] = useState(false);
   const onNavigate = () =>{
-      setTimeout(()=>{navigate('/pricing-home/monthly')}, 850)
+      setTimeout(()=>{navigate('/pricing-home/monthly')}, 420)
       setClose(true)
   }
   const [name] = useState(`${array[0]}`);
-
+  const onHover = () =>{
+    console.log('hi');
+  }
   return (
     <Container>
       <Top/>
@@ -31,14 +33,14 @@ const PricingHome = () => {
       { close && <TopClose/> }
       { close && <BottomClose/> }
       <Main>
-        <Title width='65%'> {name} CEO들의 <br></br>필수과정 • 도전 • 네트웍</Title>
+        <Title width='65%'> {name === 'undefined' ? '':`${name}`} CEO들의 <br></br>필수과정 • 도전 • 네트웍</Title>
         <Text margin='15px 0'>CEO.기업가들이 말하는 3D메버 후기를 확인 해 보세요</Text>
           <Wrap>
             <Plan borderBottom ='3px solid #000'>후기 확인</Plan>
             <Plan onClick={onNavigate}>우리 계획</Plan>
           </Wrap>
           <Wrapper>
-            <Box>
+            <Box onFocus={onHover}>
               <Title fontSize='34px'>온라인 CEO과정</Title>
               <Text fontSize ='18px'>2,500,000원</Text>
               <Line/>

@@ -6,7 +6,6 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   background: linear-gradient( #FFFFFF, #F4F9FC);
-  margin-top: 80px;
   @media ${device.mobile} { 
     min-width: 360px;
     margin-top: 0px;

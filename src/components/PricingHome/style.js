@@ -75,6 +75,8 @@ const Box = styled.div`
   background: ${({backGround})=>(backGround ? `${backGround}` : '#FFFFFF')};
   box-shadow: 0px 10px 40px 0px rgba(170, 183, 199, 0.3);
   position: relative;
+  transition: all 0.2s;
+  
   @media ${device.tablet} { 
     width: 40rem
   }

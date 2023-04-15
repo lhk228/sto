@@ -10,11 +10,8 @@ const Extend = () => {
   const navigate = useNavigate()
   const [close, setClose] = useState(false);
   const onClick = () => {
-    setTimeout(()=>{navigate('/success-home')}, 850)
+    setTimeout(()=>{navigate('/success-home')}, 420)
       setClose(true)
-  }
-  const onClick2 = () => {
-    navigate('/story-home');
   }
   return (
     <Container>
@@ -43,7 +40,7 @@ const Extend = () => {
                 <VideoBox>
                   <ReactPlayer width={'100%'} height={'100%'} url={'https://youtu.be/tkOcbaGJshk'}></ReactPlayer>
                 </VideoBox>
-                <Button onClick={onClick2} type={'full'}>성공하는 CEO들의 AI경영. 3D마케팅 바로보기</Button>
+                <Button onClick={onClick} type={'full'}>성공하는 CEO들의 AI경영. 3D마케팅 바로보기</Button>
               </Box>
             </TitleWrap>
           </BoxWrap>

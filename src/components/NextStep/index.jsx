@@ -9,13 +9,12 @@ import { Bottom, BottomClose, Top, TopClose } from '../Generic/transform';
 const FreeTrialStep1 = () => {
   const navigate = useNavigate()
   const onClick = () => {
-    setTimeout(()=>{navigate('/extend')}, 850)
+    setTimeout(()=>{navigate('/extend')}, 420)
       setClose(true)
   }
   const [close, setClose] = useState(false);
   const onClick2 = () => {
-    setTimeout(()=>{navigate('/success-home')}, 850)
-      setClose(true)
+      navigate('/story-home')
   }
   return (
     <Container>

@@ -17,7 +17,7 @@ const Step4 = () => {
   const [close, setClose] = useState(false);
   const onClick =()=> {
     if(value){
-      setTimeout(()=>{navigate('/form/step-5')}, 850)
+      setTimeout(()=>{navigate('/form/step-5')}, 420)
       setClose(true)
       array.push(value);
     }else{

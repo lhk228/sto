@@ -6,6 +6,7 @@ import { Button } from '../Generic';
 import { Index } from '../1_HomePage_Intro/style';
 import { useNavigate } from 'react-router-dom';
 import paid from '../../assets/imgs/paid-video.png'
+
 const PartnersPage = () => {
   const navigate = useNavigate();
   const onClick =()=> {
@@ -26,7 +27,7 @@ const PartnersPage = () => {
           <VideoContainer>
             <VideoBox>
               <VideoWrap>
-                <ReactPlayer controls width={'100%'} height={'100%'} url={SpeVideo[1].url}></ReactPlayer>
+                <ReactPlayer controls width={'100%'} height={'100%'} url={SpeVideo[0].url}></ReactPlayer>
               </VideoWrap>
               
               <Name>[무료]수강생들의 진짜후기</Name>
@@ -34,14 +35,14 @@ const PartnersPage = () => {
             </VideoBox>
             <VideoBox>
               <VideoWrap>
-              <ReactPlayer controls width={'100%'} height={'100%'} url={'https://youtu.be/mWSVB7FMmoE'}></ReactPlayer>
+              <ReactPlayer controls width={'100%'} height={'100%'} url={SpeVideo[1].url}></ReactPlayer>
               </VideoWrap>
               <Name>[무료]수강생들의 리얼후기</Name>
               <Position>후기 : OOO,OOO,OOO CEO</Position>
             </VideoBox>
             <VideoBox>
               <VideoWrap>
-              <ReactPlayer width={'100%'} height={'100%'} url={SpeVideo[1].url}></ReactPlayer>
+              <ReactPlayer width={'100%'} height={'100%'} url={SpeVideo[2].url}></ReactPlayer>
               </VideoWrap>
               <Name>[무료1강] 비즈니스 모델별 사례</Name>
               <Position>강사 : 이상민 CEO</Position>
