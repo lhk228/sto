@@ -18,59 +18,59 @@ const WhyFourthPage = () => {
       <Main>
         <Introbox>
           <IntroTextBox>
-            <IntroTitle>그렇다면, 왜 퍼널인가요?</IntroTitle>
-            <IntroText>솔직히 말하자면, 지불 고객이 없는 웹사이트는 도로가 전혀 이어지지 않은 사막 가운데에 가게를 지은 것과 같습니다.</IntroText>
-            <IntroUnit>그곳에 "퍼널"이 등장합니다.</IntroUnit>
-            <IntroText>퍼널은 꿈의 고객을 귀사 웹사이트로 유입시켜서 그들이 신용 카드를 들고 귀사의 온라인 스토어로 이동할 수 있도록 하는 "디지털 도로"와 같습니다!</IntroText>
+            <IntroTitle>그렇다면, 왜 메버인가요?</IntroTitle>
+            <IntroText>대부분의 웹사이트 99.9%는 카달로그식 정보 전달형에 불과합니다.</IntroText>
+            <IntroUnit>하지만 "메버"는 설계부터가 다릅니다.</IntroUnit>
+            <IntroText>메버는 꿈의고객을 3D 웹사이트로 유입시켜서 그들이 AI 마케팅에 자신도 모르게 지출하게 만드는 "월세를 받는 빌딩"과 같은 방식입니다!</IntroText>
           </IntroTextBox>
           <IntroImg src={introPic}></IntroImg>
         </Introbox>
-        <Title>퍼널은 온라인 성공의 비밀입니다</Title>
-        <SubTitle>수익을 내지 못하는 19억 2,999만 9,999개의 웹사이트와 수익을 창출하는 0.000000002%의 웹사이트와의 차이점이 됩니다!</SubTitle>
+        <Title>메버는 온라인 성공의 비밀입니다</Title>
+        <SubTitle>수익을 내지 못하는 전세계 19억 2,999만 9,999개의 웹사이트와 수익을 창출하는 0.000000002%의 3D홈페이지는 차원이 다릅니다!</SubTitle>
         <CompareWrapper>
           <CompareBox>
-            <CompareTitle>퍼널 없이는</CompareTitle>
+            <CompareTitle>메버가 없을때?</CompareTitle>
             <IconBox>
               <Icon.Cancel/>
-              <Shorts>고객이 없습니다</Shorts>
+              <Shorts>웹 고객이 없습니다</Shorts>
             </IconBox>
             <IconBox>
               <Icon.Cancel/>
-              <Shorts>판매가 없습니다</Shorts>
+              <Shorts>웹 판매가 없습니다</Shorts>
             </IconBox>
             <IconBox>
               <Icon.Cancel/>
-              <Shorts>혼란스러운 구매 과정입니다</Shorts>
+              <Shorts>혼란스러운 정보만 가득한 웹입니다</Shorts>
             </IconBox>
             <IconBox>
               <Icon.Cancel/>
-              <Shorts>슬픔이 따릅니다</Shorts>
+              <Shorts>파리만 날리는 웹입니다</Shorts>
             </IconBox>
           </CompareBox>
           <CompareBox>
-            <CompareTitle>퍼널이 있다면</CompareTitle>
+            <CompareTitle>메버와 함께라면!</CompareTitle>
             <IconBox>
               <Icon.Check/>
-              <Shorts>고객의 유입이 지속됩니다</Shorts>
+              <Shorts>고객의 웹 유입이 지속됩니다</Shorts>
             </IconBox>
             <IconBox>
               <Icon.Check/>
-              <Shorts>간편한 구매 과정이 제공됩니다</Shorts>
+              <Shorts>간편한 웹 구매 과정이 제공됩니다</Shorts>
             </IconBox>
             <IconBox>
               <Icon.Check/>
-              <Shorts>판매 기회가 증가합니다</Shorts>
+              <Shorts>웹 판매 기회가 증가합니다</Shorts>
             </IconBox>
             <IconBox>
               <Icon.Check/>
-              <Shorts>슬픔의 반대가 됩니다</Shorts>
+              <Shorts>월세받는 빌딩 이상의 가치가됩니다</Shorts>
             </IconBox>
           </CompareBox>
         </CompareWrapper>
-        <QuesText>슬픔의 반대감을 느끼는 것이 좋으신가요?</QuesText>
-        <AdHead>그렇다면, 지금 바로 ClickFunnels 무료 체험을 신청해 보세요!</AdHead>
-        <Button onClick={onClick} type={'large'}>지금 무료 평가판을 시작하세요</Button>
-        <Index>계약 없음 • 언제든지 해지 가능</Index>
+        <QuesText>월세받는 빌딩을 좋아하시나요?</QuesText>
+        <AdHead>그렇다면, 지금 바로 메버에서 상담 신청 해 보세요!</AdHead>
+        <Button onClick={onClick} type={'large'}>처음 오신 CEO를 위한, 서비스 견적</Button>
+        <Index>약정 계약 없음 • 언제든지 해지 가능</Index>
       </Main> 
     </Container>
 
